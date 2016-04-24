@@ -1,0 +1,10 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "base/base";
+@import "modules/modules";
+@import "layouts/layouts";
+
