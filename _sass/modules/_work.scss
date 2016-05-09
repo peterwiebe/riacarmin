@@ -1,0 +1,93 @@
+// ==========================================================================
+// WORK / CASE STUDIES
+// ==========================================================================
+
+.work {
+
+  &__container {
+    position: relative;
+  }
+
+  &__section-title {
+    position: absolute;
+    top: 1em;
+    left: -2em;
+    font-size: 3.5em;
+  }
+
+  &__box {
+    @include span-columns(12);
+    height: 680px;
+    background-color: map-get($accent-colors, primary);
+    position: relative;
+    @include media($medium-screen-up) {
+      @include vertical-align;
+      width: 85%;
+      margin-left: 15%;
+    }
+  }
+
+  // Cards
+  // ========================================================================
+  $total-height: 680px;
+  // $height: $total-height / 2 - $gutter;
+  // $width: $total-height / 2 - $gutter;
+  $height: 330px;
+  $width: $height;
+  $gutter: 10px;
+  &__grid {
+    height: 100%;
+    padding: 2em 2em 2em 12em;
+    @include clearfix;
+    
+  }
+  &__wrapper {
+    height: 100%;
+    overflow-x: scroll;
+  }
+  &__card {
+    display: inline-block;
+    background-color: $medium-gray;
+    margin-right: $gutter;
+
+    &--sizer {
+      height: $height;
+    }
+    &--gutter {
+      height: $gutter;
+    }
+
+    &--featured,
+    &--horizontal {
+      width:  $width*2;
+    }
+    
+    &--squared,
+    &--vertical {
+      width:  $width;
+    }
+
+    &--squared,
+    &--horizontal {
+      height: $height;
+    }
+
+    &--featured,
+    &--vertical {
+      height: $height*2+$gutter;
+    }
+
+    &--featured {
+      
+    }
+    &--squared {
+      
+    }
+    &--vertical {
+      
+    }
+    &--horizontal {
+      
+    }
+  }
+}

@@ -1,0 +1,102 @@
+// ==========================================================================
+// COVER
+// ==========================================================================
+
+.cover {
+  height: 100%;
+  &__left-column,
+  &__right-column {
+    @include clearfix;
+    overflow: hidden;
+    position: relative;
+    @include media($medium-screen-up) {
+      display: inline-block;
+      width: 50%;
+      height: 100%;
+      vertical-align: top;
+    }
+  }
+  &__left-column {
+    background-color: map-get($accent-colors, light);
+  }
+
+  &__right-column {
+    background-color: map-get($accent-colors, dark);
+  }
+  &__inner,
+  &__navigation {
+    padding: 1em 0;
+    @include media($medium-screen-up) {
+      @include vertical-align;
+    }
+  }
+  &__inner {
+    @include media($medium-screen-up) {
+      width: em(350);
+      margin: 0 auto;
+    }
+  }
+  &__name {
+    text-transform: capitalize;
+    letter-spacing: 0;
+    font-size: 3em;
+    margin-bottom: 0;
+    color: $wine;
+  }
+  &__title {
+    color: map-get($gray-colors,x-dark);
+    font-size: 1.25em;
+    font-weight: 400;
+  }
+
+  &__navigation {
+    text-align: center;
+  }
+
+  &__navigation-item {
+    margin: .5em 0;
+    a {
+      @extend h3;
+      color: transparentize(white,.5);
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+
+  &__skewed {
+    height: 8.75em;
+    width: 110%;
+    position: absolute;
+    bottom: -6.25em;
+
+    &--left {
+      right: 4px;
+      @include transform(rotate(5deg));
+      background-color: lighten(map-get($accent-colors, light), 5%);
+    }
+
+    &--right {
+      left: 4px;
+      @include transform(rotate(-5deg));
+      background-color: darken(map-get($accent-colors, dark), 10%);
+    }
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

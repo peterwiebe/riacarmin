@@ -1,6 +1,10 @@
 // Typography
-$base-font-family: $helvetica;
-$heading-font-family: $base-font-family;
+
+// Montserrat 400, 700
+// PT Serif 400, 400italic, 700
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|PT+Serif:400,400italic,700);
+$base-font-family: 'PT Serif', serif;
+$heading-font-family: 'Montserrat', sans-serif;
 
 // Font Sizes
 $base-font-size: 1em;
@@ -10,20 +14,64 @@ $base-line-height: 1.5;
 $heading-line-height: 1.2;
 
 // Other Sizes
-$base-border-radius: 3px;
+$base-border-radius: 2px;
 $base-spacing: $base-line-height * 1em;
 $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$blue: #477dca;
-$dark-gray: #333;
-$medium-gray: #999;
-$light-gray: #ddd;
+
+// Theme Colors
+$white       : transparentize(white,.2);
+$robin       : #8FCCCC;
+$wine        : #5B4653;
+$mustard     : #DDC045;
+
+$accent-colors: (
+  primary    : $robin,
+  terciary   : $mustard,
+  dark       : $wine,
+  light      : #CFE5E4
+);
+
+// UI Colors
+$vista       : #79D1AD;
+$mandy       : #e67478;
+$apricot     : #ed8864;
+$eastside    : #9279c3;
+
+$ui-colors: (
+  default   : $robin ,
+  success   : $robin,
+  error     : $mandy,
+  warning   : $apricot,
+  info      : $eastside
+);
+
+// Greys
+$gray-colors: (
+  x-light   : #EEEDF2,
+  light     : #C4C2CC,
+  medium    : #8E8C99,
+  dark      : #525059,
+  x-dark    : #232326
+);
+$dark-gray  : map-get($gray-colors, dark);
+$medium-gray: map-get($gray-colors, medium);
+$light-gray : map-get($gray-colors, light);
+
+// Brand Colors
+$color-twitter  : #00aced;
+$color-facebook : #3b5998;
+
+$brand-colors: (
+  twitter   : $color-twitter,
+  facebook  : $color-facebook
+);
 
 // Font Colors
 $base-font-color: $dark-gray;
-$action-color: $blue;
+$action-color: map-get($accent-colors, primary);
 
 // Border
 $base-border-color: $light-gray;

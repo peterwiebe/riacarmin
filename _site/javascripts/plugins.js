@@ -22,3 +22,34 @@
 }());
 
 // Place any jQuery/helper plugins in here.
+$(window).ready(function() {
+    $('.smoothScroll').smoothScroll({
+        // Options
+        easing: 'swing',
+        speed: 1000
+    });
+
+    $('.scroll-pane').jScrollPane(
+        {
+            showArrows: true,
+        }
+    );
+
+    if ( $('.work__grid').length ) {
+        $('.work__grid').isotope({
+            // Options
+            layoutMode: 'masonryHorizontal',
+            itemSelector: '.work__card',
+            masonryHorizontal: {
+              rowHeight: '.work__card--sizer',
+              gutter: '.work__card--gutter'
+            }
+        });
+    }
+    if ( $('.events__grid').length ) {
+        $('.events__grid').isotope({
+            // Options
+
+        });
+    }
+}());

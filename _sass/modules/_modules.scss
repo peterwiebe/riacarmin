@@ -2,5 +2,9 @@
 // MODULES
 // ==========================================================================
 
-@import "_helpers.scss";
-@import "_browserupdate.scss";
+@import "helpers";
+@import "browserupdate";
+@import "jscrollpane";
+
+@import "cover";
+@import "work";
