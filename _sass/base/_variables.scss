@@ -74,7 +74,7 @@ $base-font-color: $dark-gray;
 $action-color: map-get($accent-colors, primary);
 
 // Border
-$base-border-color: $light-gray;
+$base-border-color: map-get($gray-colors, x-light);;
 $base-border: 1px solid $base-border-color;
 
 // Background Colors

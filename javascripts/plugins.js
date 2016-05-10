@@ -41,15 +41,21 @@ $(window).ready(function() {
             layoutMode: 'masonryHorizontal',
             itemSelector: '.work__card',
             masonryHorizontal: {
-              rowHeight: '.work__card--sizer',
-              gutter: '.work__card--gutter'
+              rowHeight: 240,
+              gutter: 20
             }
         });
     }
-    if ( $('.events__grid').length ) {
-        $('.events__grid').isotope({
-            // Options
 
+    if ( $('.journal__grid').length ) {
+        $('.journal__grid').isotope({
+            // Options
+            layoutMode: 'masonry',
+            itemSelector: '.journal__item',
+            percentPosition: true,
+            masonry: {
+              columnWidth: '.journal__item--sizer'
+            }
         });
     }
 }());
