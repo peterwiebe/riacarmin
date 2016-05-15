@@ -126,7 +126,7 @@
     opacity: 1;
   }
   4% {
-    opacity: 0.9;
+    opacity: 0.7;
   }
   6% {
     opacity: 0.45;
@@ -147,7 +147,7 @@
     opacity: 0.55;
   }
   16% {
-    opacity: 0.9;
+    opacity: 0.7;
   }
   17% {
     opacity: 0.55;
@@ -162,7 +162,7 @@
     opacity: 0.5;
   }
   26% {
-    opacity: 0.69;
+    opacity: 0.6;
   }
   28% {
     opacity: 0.5;
@@ -195,7 +195,7 @@
     opacity: 0.5;
   }
   70% {
-    opacity: .9;
+    opacity: .7;
   }
   72% {
     opacity: 0.5;
@@ -204,7 +204,7 @@
     opacity: 0.5;
   }
   95% {
-    opacity: .85;
+    opacity: .7;
   }
   97% {
     opacity: 0.5;
@@ -216,9 +216,10 @@
 
 .ray {
   @include animation-name(flickering);
-  @include animation-duration(2s);
+  @include animation-duration(10s);
   @include animation-timing-function(ease);
   @include animation-iteration-count(infinite);
+  @include animation-fill-mode(backwards);
   &--1{
     @include animation-delay(.45s);
     @include animation-direction(alternate-reverse);
