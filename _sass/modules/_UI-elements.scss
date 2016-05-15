@@ -7,23 +7,6 @@
 .button {
   @extend button;
   text-align: center;
-  &__outline {
-    @each $theme, $color in $ui-colors {
-      &--#{$theme} {
-        border: 1px solid $color;
-        background-color: transparent;
-        color: $color;
-        font-weight: 700;
-        padding: $base-spacing;
-        text-align: center;
-      }
-      .button__outline--#{$theme}:hover,
-      .button__outline--#{$theme}:focus {
-        border-color: $color;
-        color: $white;
-      }
-    }
-  }
 }
 @each $theme, $color in $ui-colors {
   .button--#{$theme} {
@@ -52,6 +35,42 @@
   .button--#{$theme}:hover,
   .button--#{$theme}:focus {
     background-color: shade($color, 20%);
+    color: $white;
+  }
+}
+
+.button__outline {
+  border: 0;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $heading-font-family;
+  font-size: $base-font-size;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 700;
+  line-height: 1;
+  padding: $base-spacing;
+  text-decoration: none;
+  transition: all $base-duration $base-timing;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+}
+
+@each $theme, $color in $ui-colors {
+  .button__outline--#{$theme} {
+    border: 1px solid $color;
+    background-color: transparent;
+    color: $color;
+    font-weight: 700;
+    padding: $base-spacing;
+    text-align: center;
+  }
+  .button__outline--#{$theme}:hover,
+  .button__outline--#{$theme}:focus {
+    background-color: $color;
     color: $white;
   }
 }

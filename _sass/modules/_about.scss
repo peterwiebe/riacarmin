@@ -13,7 +13,7 @@
     margin-bottom: 1em;
   }
   &__decorative-top {
-    margin-top: em(40);
+    margin-top: 8em;
     position: relative;
     height: em(80);
     background-color: transparentize(map-get($accent-colors, dark), .4);
@@ -41,16 +41,29 @@
   }
   &__main {
     position: relative;
-    background-image: url('/assets/12698726_1098838720146350_1240518031_o.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: lighten(map-get($accent-colors, dark), 3%);
     padding: em(80) 0;
   }
   &__inner {
     z-index: 10;
     @include span-columns(6);
+    margin-top: 2em;
     @include shift(3);
     color: $white;
+  }
+  &__column {
+    margin-top: 1em;
+    @include span-columns(3 of 6);
+  }
+  &__avatar {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    top: -10em;
+    img {
+      width: em(240);
+    }
   }
   &__link {
     color: transparentize(white,.5);
