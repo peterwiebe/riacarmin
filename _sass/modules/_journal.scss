@@ -63,4 +63,9 @@
     height: 60px;
     background-color: lighten(map-get($accent-colors, primary), 25%);
   }
+  &__link {
+    display: block;
+    margin: 1em auto;
+    width: em(340);
+  }
 }

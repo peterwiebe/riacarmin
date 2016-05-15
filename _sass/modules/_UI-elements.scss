@@ -1,0 +1,57 @@
+// ==========================================================================
+// UI Elements
+// ==========================================================================
+
+// Buttons
+// ==========================================================================
+.button {
+  @extend button;
+  text-align: center;
+  &__outline {
+    @each $theme, $color in $ui-colors {
+      &--#{$theme} {
+        border: 1px solid $color;
+        background-color: transparent;
+        color: $color;
+        font-weight: 700;
+        padding: $base-spacing;
+        text-align: center;
+      }
+      .button__outline--#{$theme}:hover,
+      .button__outline--#{$theme}:focus {
+        border-color: $color;
+        color: $white;
+      }
+    }
+  }
+}
+@each $theme, $color in $ui-colors {
+  .button--#{$theme} {
+    @extend button;
+    background-color: $color;
+    color: transparentize($white, .2);
+    font-weight: 700;
+    padding: $base-spacing;
+    text-align: center;
+  }
+  .button--#{$theme}:hover,
+  .button--#{$theme}:focus {
+    background-color: shade($color, 20%);
+    color: $white;
+  }
+}
+@each $theme, $color in $brand-colors {
+  .button--#{$theme} {
+    @extend button;
+    background-color: $color;
+    color: transparentize($white, .2);
+    font-weight: 700;
+    padding: $base-spacing;
+    text-align: center;
+  }
+  .button--#{$theme}:hover,
+  .button--#{$theme}:focus {
+    background-color: shade($color, 20%);
+    color: $white;
+  }
+}

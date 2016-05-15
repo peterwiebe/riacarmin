@@ -7,7 +7,8 @@
   $width: $height;
   $gutter: 20px;
   $total-height: 544px;
-
+  
+  position: relative;
   @include clearfix;
 
   &__container {
@@ -96,28 +97,146 @@
   }
 }
 
-.grid {
-  background: #DDD;
-  height: 75%; /* inherit height from body */
+// Ray Animation
+// ========================================================================
+
+.rays {
+  height: 710px;
+  position: absolute;
+  left: -10px;
+  top: 30px;
+  // line
+  &__st0 {
+    fill:none;
+    stroke: map-get($accent-colors, secondary);
+    stroke-miterlimit:10;
+  }
+  // circle fill
+  &__st1 {
+    fill:#FFFFFF;
+  }
+  // circle outline
+  &__st2 {
+    fill: map-get($accent-colors, secondary);
+  }
 }
 
-/* clear fix */
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
+@include keyframes(flickering) {
+  from {
+    opacity: 1;
+  }
+  4% {
+    opacity: 0.9;
+  }
+  6% {
+    opacity: 0.45;
+  }
+  8% {
+    opacity: 0.55;
+  }
+  10% {
+    opacity: 0.45;
+  }
+  11% {
+    opacity: 0.5;
+  }
+  12% {
+    opacity: 0.85;
+  }
+  14% {
+    opacity: 0.55;
+  }
+  16% {
+    opacity: 0.9;
+  }
+  17% {
+    opacity: 0.55;
+  }
+  19% {
+    opacity: 0.5;
+  }
+  20% {
+    opacity: 0.15;
+  }
+  24% {
+    opacity: 0.5;
+  }
+  26% {
+    opacity: 0.69;
+  }
+  28% {
+    opacity: 0.5;
+  }
+  38% {
+    opacity: 0.15;
+  }
+  40% {
+    opacity: 0.5;
+  }
+  42% {
+    opacity: 0.85;
+  }
+  44% {
+    opacity: 0.5;
+  }
+  46% {
+    opacity: 0.15;
+  }
+  56% {
+    opacity: 0.5;
+  }
+  58% {
+    opacity: 0.95;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  68% {
+    opacity: 0.5;
+  }
+  70% {
+    opacity: .9;
+  }
+  72% {
+    opacity: 0.5;
+  }
+  93% {
+    opacity: 0.5;
+  }
+  95% {
+    opacity: .85;
+  }
+  97% {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-/* ---- .grid-item ---- */
-
-.grid-item {
-  float: left;
-  width: 100px;
-  height: 100px;
-  background: #0D8;
-  border: 2px solid #333;
-  border-color: hsla(0, 0%, 0%, 0.7);
+.ray {
+  @include animation-name(flickering);
+  @include animation-duration(2s);
+  @include animation-timing-function(ease);
+  @include animation-iteration-count(infinite);
+  &--1{
+    @include animation-delay(.45s);
+    @include animation-direction(alternate-reverse);
+  }
+  &--2{
+    @include animation-delay(1.84s);
+  }
+  &--3{
+    @include animation-delay(0);
+    @include animation-direction(alternate-reverse);
+  }
+  &--4{
+    @include animation-delay(.22s);
+  }
+  &--5{
+    @include animation-delay(.89s);
+  }
+  &--6{
+    @include animation-delay(2s);
+  }
 }
-
-.grid-item--width2 { width: 200px; }
-.grid-item--height2 { height: 200px; }

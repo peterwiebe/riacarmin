@@ -1,0 +1,9 @@
+# Common settings
+title: Ria Carmin | UX UI Designer 
+description:  Ria Carmin is a UX UI Designer
+
+sass:
+  style: compressed
+
+# Build settings
+markdown: kramdown

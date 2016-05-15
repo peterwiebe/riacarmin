@@ -30,6 +30,10 @@
       @include vertical-align;
     }
   }
+  &__animation {
+    position: absolute;
+
+  }
   &__inner {
     @include media($medium-screen-up) {
       width: em(350);
