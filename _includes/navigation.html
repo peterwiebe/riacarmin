@@ -21,9 +21,9 @@
     </div>
     <div class="navigation__right">
       {% if page.layout == 'post' %}
-      <a href="/" class="navigation__item">close <i class="navigation__back icon-close"></i></a>
+      <a href="javascript:history.back(1)" class="navigation__item">close <i class="navigation__back icon-close"></i></a>
       {% elsif page.layout == 'portfolio' %}
-      <a href="/" class="navigation__item--white">close <i class="navigation__back icon-close"></i></a>
+      <a href="javascript:history.back(1)" class="navigation__item--white">close <i class="navigation__back icon-close"></i></a>
       {% endif %}
     </div>
   </div>
