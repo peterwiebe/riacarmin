@@ -1,19 +1,16 @@
 ---
 layout: portfolio
-title: Treilla
-permalink: /treilla/
+title: Fight For Families
+permalink: /fightforfamilies/
 logo: http://riacarmin.com/images/relabelit/relabelit-pp-logo.svg
 hero-image: http://riacarmin.com/images/relabelit/relabelit-pp-bg.png
-excerpt: Personalized city guide powered by social intelligence
+excerpt: increasing awarness about immigration policies with a site that brings together the coalition
 tags:
-- Competitive Analysis
-- User Interviews
-- Mental Model
-- Task Flows
-- Visual Design
-- Prototype
-- Specifications
-- Press Kit
+- Branding
+- Information Architecture
+- Requirements Workshops
+- Web Development
+- UI Framework
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

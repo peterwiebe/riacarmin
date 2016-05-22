@@ -1,19 +1,18 @@
 ---
 layout: portfolio
-title: Treilla
-permalink: /treilla/
+title: Sweeble
+permalink: /sweeble/
 logo: http://riacarmin.com/images/relabelit/relabelit-pp-logo.svg
 hero-image: http://riacarmin.com/images/relabelit/relabelit-pp-bg.png
-excerpt: Personalized city guide powered by social intelligence
+excerpt: Experimenting with a non-binary “like” action
 tags:
-- Competitive Analysis
-- User Interviews
+- Interviews
 - Mental Model
 - Task Flows
-- Visual Design
-- Prototype
-- Specifications
-- Press Kit
+- Rapid Prototyping
+- High Fidelity Mocks
+- iOS app
+- Android app
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

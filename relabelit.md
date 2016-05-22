@@ -4,7 +4,7 @@ title: reLabel.it
 permalink: /relabelit/
 logo: http://riacarmin.com/images/relabelit/relabelit-pp-logo.svg
 hero-image: http://riacarmin.com/images/relabelit/relabelit-pp-bg.png
-excerpt: MAKING NUTRITION FACT LABELS UNDERSTANDABLE AND ACTUALLY… USEFUL
+excerpt: Making nutrition fact labels understandable and actually… useful
 tags:
 - Interviews
 - Mental Model

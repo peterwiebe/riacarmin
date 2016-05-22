@@ -1,19 +1,14 @@
 ---
 layout: portfolio
-title: Treilla
-permalink: /treilla/
+title: HypocriteHunt
+permalink: /hypocritehunt/
 logo: http://riacarmin.com/images/relabelit/relabelit-pp-logo.svg
 hero-image: http://riacarmin.com/images/relabelit/relabelit-pp-bg.png
-excerpt: Personalized city guide powered by social intelligence
+excerpt: Experimenting with social interfaces for civic engagement
 tags:
-- Competitive Analysis
-- User Interviews
-- Mental Model
-- Task Flows
-- Visual Design
-- Prototype
-- Specifications
-- Press Kit
+- Branding
+- Web Development
+- Meteor.js
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

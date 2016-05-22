@@ -1,19 +1,15 @@
 ---
 layout: portfolio
-title: Treilla
-permalink: /treilla/
+title: Elly
+permalink: /elly/
 logo: http://riacarmin.com/images/relabelit/relabelit-pp-logo.svg
 hero-image: http://riacarmin.com/images/relabelit/relabelit-pp-bg.png
-excerpt: Personalized city guide powered by social intelligence
+excerpt: User research and UI suggestions for a travel app
 tags:
-- Competitive Analysis
-- User Interviews
+- Interviews
 - Mental Model
-- Task Flows
-- Visual Design
-- Prototype
-- Specifications
-- Press Kit
+- Prototyping
+- Wireframes
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
