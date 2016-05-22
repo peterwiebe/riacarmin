@@ -6,7 +6,7 @@
   $height: 240px;
   $width: $height;
   $gutter: 20px;
-  $total-height: 544px;
+  $total-height: 560px;
   
   position: relative;
   @include clearfix;
@@ -29,18 +29,19 @@
     margin-top: 8em;
     margin-bottom: 4em;
     height: $total-height;
-    background-color: map-get($accent-colors, primary);
+    background-color: lighten(map-get($accent-colors, light), 5%);
     position: relative;
+
     @include media($medium-screen-up) {
       width: 85%;
       margin-left: 15%;
     }
   }
 
-  // Cards
+  // Grid
   // ========================================================================
   &__grid {
-    background-color: map-get($accent-colors, primary);
+    background-color: lighten(map-get($accent-colors, light), 5%);
     height: 100%;
     padding: 20px 2em 20px 12em;
     @include clearfix;
@@ -50,10 +51,24 @@
     height: 100%;
     overflow-x: scroll;
   }
+  // Cards
+  // ========================================================================
   &__card {
     display: inline-block;
-    background-color: lighten(map-get($accent-colors, primary), 25%);
+    background-color: transparentize(white, .15);
     margin-right: $gutter;
+    background-size: cover;
+    background-repeat: no-repeat;
+    h3, p {
+      padding-right: 1rem;
+      padding-left: 1rem;
+    }
+    h3 {
+      margin-top: 0.75em;
+    }
+    p {
+      color: $base-font-color;
+    }
 
     &--sizer {
       height: $height;
@@ -81,22 +96,28 @@
     &--vertical {
       height: $height*2+$gutter;
     }
-
-    &--featured {
-      
-    }
-    &--squared {
-      
-    }
-    &--vertical {
-      
-    }
-    &--horizontal {
-      
-    }
   }
 }
+// Scrollbars
+// ========================================================================
+div.work__wrapper::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
 
+div.work__wrapper::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background-color: map-get($accent-colors, primary);
+
+  }
+div.work__wrapper::-webkit-scrollbar-track {
+  background-color: transparentize(white, .6);
+}
+// div.work__wrapper::-webkit-scrollbar-button {
+//   width: 14px;
+//   display: block;
+//   background-color: map-get($accent-colors, secondary);
+// }
 // Ray Animation
 // ========================================================================
 

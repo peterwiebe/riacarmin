@@ -43,11 +43,14 @@
     padding: 0 1em 0 0;
     border-right: $base-border;
     border-bottom: $base-border;
+    img {
+      min-height: 150px;
+    }
   }
   &__tag {
     display: inline-block;
     padding: .35em .75em;
-    margin: .35em .35em .5em .35em;
+    margin-bottom: .5em;
     background-color: map-get($accent-colors, primary);
     border-radius: 40px;
     color: $white;

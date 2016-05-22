@@ -41,7 +41,7 @@
 
 .button__outline {
   border: 0;
-  border-radius: 50px;
+  border-radius: 0;
   cursor: pointer;
   display: inline-block;
   font-family: $heading-font-family;
@@ -74,3 +74,10 @@
     color: $white;
   }
 }
+// Text
+// ==========================================================================
+.text {
+
+}
+
+

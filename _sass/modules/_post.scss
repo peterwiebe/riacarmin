@@ -1,0 +1,72 @@
+// ==========================================================================
+// POST
+// ==========================================================================
+
+// ==========================================================================
+// PORTFOLIO
+// ==========================================================================
+
+.post{
+  &__main {
+    @include outer-container;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  &__aside {
+    @include span-columns(4);
+  }
+  &__title {
+    display: block;
+    width: 100%;
+    color: $color-primary;
+    text-transform: capitalize;
+    font-size: 4.5em;
+    text-align: center;
+  }
+  &__label {
+    @extend %label;
+    color: $light-gray;
+    font-size: .75em;
+    font-weight: 700;
+  }
+  &__excerpt {
+    font-family: $heading-font-family;
+  }
+  &__date {
+    font-style: italic;
+    color: $light-gray;
+  }
+  &__content {
+    @include span-columns(8);
+
+    h3 {
+      color: $color-dark;
+      margin-top: 1em;
+      font-weight: $font-weight-bold;
+      padding-left: .5em;
+      border-left: 1em solid $color-dark;
+    }
+
+    blockquote {
+      color: $light-gray;
+      font-size: 1.5em;
+      font-family: $heading-font-family;
+    }
+  }
+  &__video {
+    @include responsive-video;
+    margin-bottom: 1em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

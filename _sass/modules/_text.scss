@@ -1,0 +1,56 @@
+// ==========================================================================
+// Text
+// ==========================================================================
+%label {
+  font-family: $heading-font-family;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+em.text--emphasize,
+ {
+  font-style: normal;
+  font-weight: $font-weight-bold;
+}
+
+em.text--highlight {
+  font-style: normal;
+  background: linear-gradient(transparent 30%, transparentize(map-get($accent-colors, secondary), .4) 30%);
+}
+
+.text {
+  // Generates color classes
+  // e.g. .text__color--light
+  &__color {
+    @include text-colors($gray-colors);
+    &--clear {
+      color: transparentize(white, .4);
+    }
+  }
+  &__position {
+    &--left {
+      text-align: left;
+    }
+    &--center {
+      text-align: center;
+    }
+    &--right {
+      text-align: right;
+    }
+  }
+  &__heading {
+    @extend %label;
+    font-size: 2em;
+    &--light {
+      color: transparentize(white, .2);
+    }
+    &--dark {
+      color: map-get($accent-colors, dark);
+    }
+  }
+}
+
+hr.text__element--divider {
+  height: 1em;
+  background-color: map-get($accent-colors, secondary);
+  border: none;
+}

@@ -1,0 +1,30 @@
+{% if page.layout == 'portfolio' %}
+<nav class="navigation--overlay">
+{% else %}
+<nav class="navigation">
+{% endif %}
+
+  <div class="navigation__inner">
+    <div class="navigation__left">
+      {% if page.layout == 'portfolio' %}
+        <a href="/" class="navigation__name navigation__name--white">Ria Carmin</a>
+          {% else %}
+        <a href="/" class="navigation__name navigation__name--regular">Ria Carmin</a>
+      {% endif %}
+
+      {% if page.layout == 'page' %}
+      <a href="/" class="navigation__item">Work</a>
+      <a href="/" class="navigation__item">Journal</a>
+      <a href="/" class="navigation__item">About</a>
+      {% endif %}
+
+    </div>
+    <div class="navigation__right">
+      {% if page.layout == 'post' %}
+      <a href="/" class="navigation__item">close <i class="navigation__back icon-close"></i></a>
+      {% elsif page.layout == 'portfolio' %}
+      <a href="/" class="navigation__item--white">close <i class="navigation__back icon-close"></i></a>
+      {% endif %}
+    </div>
+  </div>
+</nav>
