@@ -1,0 +1,10 @@
+- title: Cool Shit
+  permalink: /relabelit/
+  image: http://imgfave-herokuapp-com.global.ssl.fastly.net/image_cache/1330844577572394.jpg
+  layout: featured
+
+- title: Dope Shit
+  permalink: /relabelit/
+  image: http://imgfave-herokuapp-com.global.ssl.fastly.net/image_cache/1330844577572394.jpg
+  layout: vertical
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident temporibus ex.
