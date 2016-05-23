@@ -96,7 +96,10 @@ layout: base
         {% for item in site.data.work %}
           
           <a class="work__card work__card--{{item.layout}}" href="{{ item.permalink }}" {% if item.description %}{% else %}style="background-image:url({{item.image}}){% endif %}">
-          
+          <div class="work__overlay">
+            <h3 class="work__overlay-title">{{ item.title }}</h3>
+            <hr class="work__overlay-hr">
+          </div>
           {% if item.description %}
             <img src="{{item.image}}" alt="{{ item.title }} cover">
             <h3>{{ item.title }}</h3>
