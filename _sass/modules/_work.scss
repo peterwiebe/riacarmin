@@ -6,7 +6,7 @@
   $height: 240px;
   $width: $height;
   $gutter: 20px;
-  $total-height: 560px;
+  $total-height: 600px;
   
   position: relative;
   @include clearfix;
@@ -21,7 +21,7 @@
     left: -2em;
     font-size: 3.5em;
     z-index: 10;
-    color: map-get($accent-colors, dark);
+    color: lighten(map-get($accent-colors, primary), 5%);
   }
 
   &__box {
@@ -29,7 +29,7 @@
     margin-top: 8em;
     margin-bottom: 4em;
     height: $total-height;
-    background-color: lighten(map-get($accent-colors, light), 5%);
+    background-color: map-get($accent-colors, dark);
     position: relative;
 
     @include media($medium-screen-up) {
@@ -41,9 +41,9 @@
   // Grid
   // ========================================================================
   &__grid {
-    background-color: lighten(map-get($accent-colors, light), 5%);
+    background-color: map-get($accent-colors, dark);
     height: 100%;
-    padding: 20px 2em 20px 12em;
+    padding: 40px 2em 40px 12em;
     @include clearfix;
     
   }

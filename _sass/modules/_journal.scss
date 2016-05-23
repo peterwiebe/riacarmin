@@ -13,7 +13,7 @@
     font-size: 4.5em;
     z-index: 10;
     margin-bottom: 0;
-    color: lighten(map-get($accent-colors, primary), 15%);
+    color: map-get($accent-colors, dark);
   }
 
   &__box {
@@ -21,7 +21,9 @@
     margin-top: 4em;
     margin-bottom: 1em;
     height: 8em;
-    background-color: map-get($accent-colors, dark);
+    border-top: 4px solid lighten(map-get($accent-colors, light), 5%);
+    border-bottom: 4px solid lighten(map-get($accent-colors, light), 5%);
+    border-left: 4px solid lighten(map-get($accent-colors, light), 5%);
     position: relative;
     @include media($medium-screen-up) {
       width: 85%;
