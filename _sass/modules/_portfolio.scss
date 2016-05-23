@@ -21,7 +21,10 @@
     margin-bottom: 2em;
   }
   &__aside {
-    @include span-columns(4);
+    @include span-columns(12);
+    @include media($medium-screen-up) {
+      @include span-columns(4);
+    }
   }
   &__label {
     @extend %label;
@@ -67,9 +70,13 @@
   &__back-button {
     width: 100%;
     margin-top: 1em;
+    margin-bottom: 1em;
   }
   &__content {
-    @include span-columns(8);
+    @include span-columns(12);
+    @include media($medium-screen-up) {
+      @include span-columns(8);
+    }
 
     blockquote {
       color: $light-gray;

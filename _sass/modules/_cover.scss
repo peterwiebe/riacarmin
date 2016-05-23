@@ -3,7 +3,11 @@
 // ==========================================================================
 
 .cover {
-  height: 100%;
+  
+  @include media($medium-screen-up) {
+    height: 100%;
+  }
+  
   &__left-column,
   &__right-column {
     @include clearfix;
@@ -35,9 +39,10 @@
 
   }
   &__inner {
-    @include media($medium-screen-up) {
-      width: em(350);
-      margin: 0 auto;
+    width: em(350);
+    margin: 0 auto;
+    @include media($medium-screen-down) {
+      @include vertical-align;
     }
   }
   &__name {
@@ -55,6 +60,7 @@
 
   &__navigation {
     text-align: center;
+    @include clearfix;
   }
 
   &__navigation-item {
@@ -72,6 +78,9 @@
     height: 8.75em;
     width: 110%;
     position: absolute;
+    @include media($medium-screen-down){
+      display: none;
+    }
 
     &--left-1 {
       right: -4px;

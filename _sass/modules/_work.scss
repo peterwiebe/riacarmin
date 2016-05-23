@@ -13,28 +13,35 @@
 
   &__container {
     position: relative;
+    @include clearfix;
   }
 
   &__section-title {
-    position: absolute;
-    top: 1em;
-    left: -2em;
-    font-size: 3.5em;
-    z-index: 10;
     color: lighten(map-get($accent-colors, primary), 5%);
+    font-size: 3.5em;
+    @include media($medium-screen-down) {
+      margin: 1em .25em;
+    }
+    @include media($medium-screen-up) {
+      position: absolute;
+      top: 1em;
+      left: -2em;
+      z-index: 10;
+    }    
   }
 
   &__box {
     @include span-columns(12);
-    margin-top: 8em;
-    margin-bottom: 4em;
-    height: $total-height;
     background-color: map-get($accent-colors, dark);
     position: relative;
+    @include clearfix;
 
     @include media($medium-screen-up) {
+      height: $total-height;
       width: 85%;
       margin-left: 15%;
+      margin-top: 8em;
+      margin-bottom: 4em;
     }
   }
 
@@ -42,9 +49,13 @@
   // ========================================================================
   &__grid {
     background-color: map-get($accent-colors, dark);
-    height: 100%;
-    padding: 20px 2em 20px 12em;
+    height: $gutter + $height + $gutter;
+    padding: 20px 2em;
     @include clearfix;
+    @include media($medium-screen-up) {
+      padding-left: 12em;
+      height: 100%;
+    }
     
   }
   &__wrapper {
@@ -80,7 +91,10 @@
 
     &--featured,
     &--horizontal {
-      width:  $width*2+$gutter;
+      width: $width;
+      @include media($medium-screen-up) {
+        width: $width*2+$gutter;
+      }  
     }
     
     &--squared,
@@ -95,7 +109,10 @@
 
     &--featured,
     &--vertical {
-      height: $height*2+$gutter;
+      height: $height;
+      @include media($medium-screen-up) {
+        height: $height*2+$gutter;
+      }   
     }
   }
 
@@ -162,6 +179,9 @@ div.work__wrapper::-webkit-scrollbar-track {
   position: absolute;
   left: -10px;
   top: 30px;
+  @include media($medium-screen-down) {
+    display: none;
+  }
   // line
   &__st0 {
     fill:none;

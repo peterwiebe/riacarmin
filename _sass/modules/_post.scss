@@ -13,15 +13,21 @@
     margin-bottom: 2em;
   }
   &__aside {
-    @include span-columns(4);
+    @include span-columns(12);
+    @include media($medium-screen-up) {
+      @include span-columns(4);
+    }
   }
   &__title {
     display: block;
     width: 100%;
     color: $color-primary;
     text-transform: capitalize;
-    font-size: 4.5em;
+    font-size: 3em;
     text-align: center;
+    @include media($medium-screen-up) {
+      font-size: 4.5em;
+    }
   }
   &__label {
     @extend %label;
@@ -37,7 +43,10 @@
     color: $light-gray;
   }
   &__content {
-    @include span-columns(8);
+    @include span-columns(12);
+    @include media($medium-screen-up) {
+      @include span-columns(8);
+    }
 
     h3 {
       color: $color-dark;

@@ -16,3 +16,9 @@
     text-align: center;
   }
 }
+
+.mobile-container {
+    @include media($medium-screen-down) {
+       padding: 0 em(14);
+    }
+}

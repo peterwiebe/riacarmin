@@ -61,11 +61,11 @@
 
 @each $theme, $color in $ui-colors {
   .button__outline--#{$theme} {
-    border: 1px solid $color;
+    border: 4px solid $color;
     background-color: transparent;
     color: $color;
     font-weight: 700;
-    padding: $base-spacing;
+    padding: $base-spacing $base-spacing / 2;
     text-align: center;
   }
   .button__outline--#{$theme}:hover,
