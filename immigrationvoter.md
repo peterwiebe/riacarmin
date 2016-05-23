@@ -2,8 +2,8 @@
 layout: portfolio
 title: Immigration Voter
 permalink: /immigrationvoter/
-logo: http://riacarmin.com/images/relabelit/relabelit-pp-logo.svg
-hero-image: http://riacarmin.com/images/relabelit/relabelit-pp-bg.png
+logo: /assets/immigrationvoter/logo.png
+hero-image: /assets/immigrationvoter/background.png
 excerpt: Mobilizing tech community around immigration reform
 tags:
 - Branding
@@ -17,3 +17,6 @@ quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+![My helpful screenshot]({{ site.url }}/assets/immigrationvoter/screenshot1.png)
+![My helpful screenshot]({{ site.url }}/assets/immigrationvoter/screenshot2.png)

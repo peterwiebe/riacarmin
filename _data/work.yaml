@@ -1,53 +1,47 @@
+- title: reLabel.it
+  permalink: /relabelit/
+  image: /assets/relabelit/cover.png
+  layout: horizontal
+
 - title: Meenk
   permalink: /meenk/
-  image: http://imgfave-herokuapp-com.global.ssl.fastly.net/image_cache/1330844577572394.jpg
+  image: /assets/meenk/cover.png
   layout: squared
 
 - title: Elly
-  permalink: /meenk/
-  image: http://imgfave-herokuapp-com.global.ssl.fastly.net/image_cache/1330844577572394.jpg
+  permalink: /elly/
+  image: /assets/elly/cover.png
   layout: squared
-
-- title: reLabel.it
-  permalink: /relabelit/
-  image: http://imgfave-herokuapp-com.global.ssl.fastly.net/image_cache/1330844577572394.jpg
-  layout: vertical
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident temporibus ex.
-
-- title: Sweeble
-  permalink: /sweeble/
-  image: http://imgfave-herokuapp-com.global.ssl.fastly.net/image_cache/1330844577572394.jpg
-  layout: horizontal
 
 - title: HelloMaker
   permalink: /hellomaker/
-  image: http://imgfave-herokuapp-com.global.ssl.fastly.net/image_cache/1330844577572394.jpg
+  image: /assets/hellomaker/cover.png
   layout: squared
 
 - title: Beauty Sphere
   permalink: /beautysphere/
-  image: http://imgfave-herokuapp-com.global.ssl.fastly.net/image_cache/1330844577572394.jpg
+  image: /assets/beautysphere/cover.png
   layout: squared
 
 - title: ImmigrationVoter
   permalink: /immigrationvoter/
-  image: http://imgfave-herokuapp-com.global.ssl.fastly.net/image_cache/1330844577572394.jpg
+  image: /assets/immigrationvoter/cover.png
   layout: featured
 
 - title: FightForFamilies
   permalink: /fightforfamilies/
-  image: http://imgfave-herokuapp-com.global.ssl.fastly.net/image_cache/1330844577572394.jpg
+  image: /assets/fightforfamilies/cover.png
   layout: horizontal
-
-- title: HypocriteHunt
-  permalink: /hypocritehunt/
-  image: http://imgfave-herokuapp-com.global.ssl.fastly.net/image_cache/1330844577572394.jpg
-  layout: squared
 
 - title: Treilla
   permalink: /treilla/
-  image: http://imgfave-herokuapp-com.global.ssl.fastly.net/image_cache/1330844577572394.jpg
-  layout: squared
+  image: /assets/treilla/cover.png
+  layout: horizontal
+
+- title: Sweeble
+  permalink: /sweeble/
+  image: /assets/sweeble/cover.png
+  layout: vertical
 
 
 

@@ -2,8 +2,8 @@
 layout: portfolio
 title: Sweeble
 permalink: /sweeble/
-logo: http://riacarmin.com/images/relabelit/relabelit-pp-logo.svg
-hero-image: http://riacarmin.com/images/relabelit/relabelit-pp-bg.png
+logo: /assets/sweeble/logo.png
+hero-image: /assets/sweeble/background.png
 excerpt: Experimenting with a non-binary “like” action
 tags:
 - Interviews
@@ -20,3 +20,4 @@ quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+![My helpful screenshot]({{ site.url }}/assets/sweeble/ios.png)

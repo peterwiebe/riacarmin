@@ -2,8 +2,8 @@
 layout: portfolio
 title: Beauty Sphere
 permalink: /beautysphere/
-logo: http://riacarmin.com/images/relabelit/relabelit-pp-logo.svg
-hero-image: http://riacarmin.com/images/relabelit/relabelit-pp-bg.png
+logo: /assets/beautysphere/logo.svg
+hero-image: /assets/beautysphere/background.png
 excerpt: Empowering women to make informed choices in skin care
 tags:
 - Mental Model
@@ -18,3 +18,7 @@ quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+![My helpful screenshot]({{ site.url }}/assets/beautysphere/display-and-macbook.png)
+![My helpful screenshot]({{ site.url }}/assets/beautysphere/project-info.png)
+![My helpful screenshot]({{ site.url }}/assets/beautysphere/site-map.png)
+![My helpful screenshot]({{ site.url }}/assets/beautysphere/wireframe.png)

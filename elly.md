@@ -2,8 +2,8 @@
 layout: portfolio
 title: Elly
 permalink: /elly/
-logo: http://riacarmin.com/images/relabelit/relabelit-pp-logo.svg
-hero-image: http://riacarmin.com/images/relabelit/relabelit-pp-bg.png
+logo: /assets/elly/logo.png
+hero-image: /assets/elly/background.jpg
 excerpt: User research and UI suggestions for a travel app
 tags:
 - Interviews
