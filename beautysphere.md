@@ -18,7 +18,12 @@ quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-![My helpful screenshot]({{ site.url }}/assets/beautysphere/display-and-macbook.png)
+lightbox__image
+
+<a class="lightbox__image" href="/assets/beautysphere/display-and-macbook.png" onclick="return false">
+![My helpful screenshot](/assets/beautysphere/display-and-macbook.png)
+</a>
+
 ![My helpful screenshot]({{ site.url }}/assets/beautysphere/project-info.png)
 ![My helpful screenshot]({{ site.url }}/assets/beautysphere/site-map.png)
 ![My helpful screenshot]({{ site.url }}/assets/beautysphere/wireframe.png)
