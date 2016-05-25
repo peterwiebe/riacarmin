@@ -47,6 +47,13 @@ em.text--highlight {
       color: map-get($accent-colors, dark);
     }
   }
+  &__caption {
+    text-align: right;
+    border-top: $base-border;
+    color: $medium-gray;
+    font-style: italic;
+    margin-bottom: 1.5em;
+  }
 }
 
 hr.text__element--divider {

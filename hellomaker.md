@@ -11,14 +11,16 @@ tags:
 - Mentoring
 ---
 
-![My helpful screenshot]({{ site.url }}/assets/hellomaker/colors.png)
+![Color scheme.]({{ site.url }}/assets/hellomaker/colors.png)
+<p class="text__caption">Color scheme.</p>
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+How many of us have great ideas? How many of those ideas actually get to see the light? We have started these free workshops to help people learn the necessary tools to become “makers” and “doers” of the digital age. Check out the site at <a href="http://hellomaker.camp/" target="_blank">HelloMaker.camp</a>.
 
-![My helpful screenshot]({{ site.url }}/assets/hellomaker/screenshot1.jpg)
-![My helpful screenshot]({{ site.url }}/assets/hellomaker/screenshot2.jpg)
+>HelloMaker Camp is a series of hands-on workshops. Students can start with some basic projects or choose more advanced topics.
+
+As a volunteer group, we have created an interactive web application that integrates with Meetup. Students can access question boards for classes they've signed up for on Meetup. These boards help volunteer instructors to understand what topics students are interested in the most. Students can upvote questions, and also see discussions in other classes.
+
+![Interactive class space]({{ site.url }}/assets/hellomaker/screenshot1.jpg)
+<p class="text__caption">Interactive class space.</p>
+![Event page.]({{ site.url }}/assets/hellomaker/screenshot2.jpg)
+<p class="text__caption">Event page.</p>

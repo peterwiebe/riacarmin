@@ -11,9 +11,20 @@ tags:
 - Prototyping
 - Wireframes
 ---
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+I worked on a project that needed a solid user research foundation. Elly was a code name for a travel application, and the team needed to tap into user behaviours around planning trips. The project started with requirements workshop, where we identified the scope. I've helped with qualitative and quantitative user research and drawing insights from it, and finally, interface suggestions.
+
+>&hellip;the team needed to tap into user behaviours around planning trips
+
+<div class="portfolio__viewer js-flickity">
+	<img src="/assets/elly/elly-documentation-1.jpg" alt="Elly. Travel App. Documentation">
+	<img src="/assets/elly/elly-documentation-2.jpg" alt="Elly. Travel App. Documentation">
+	<img src="/assets/elly/elly-documentation-3.jpg" alt="Elly. Travel App. Documentation">
+	<img src="/assets/elly/elly-documentation-4.jpg" alt="Elly. Travel App. Documentation">
+	<img src="/assets/elly/elly-documentation-5.jpg" alt="Elly. Travel App. Documentation">
+	<img src="/assets/elly/elly-documentation-6.jpg" alt="Elly. Travel App. Documentation">
+	<img src="/assets/elly/elly-documentation-7.jpg" alt="Elly. Travel App. Documentation">
+	<img src="/assets/elly/elly-documentation-8.jpg" alt="Elly. Travel App. Documentation">
+	<img src="/assets/elly/elly-documentation-9.jpg" alt="Elly. Travel App. Documentation">
+</div>
+
+<p class="text__caption">Project documentation. Research and wireframes.</p>
