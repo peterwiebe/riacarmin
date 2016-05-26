@@ -5,8 +5,10 @@ permalink: /hellomaker/
 logo: /assets/hellomaker/logo.png
 hero-image: /assets/hellomaker/background.png
 excerpt: learning community of passionate designers and developers
+activeUrl: hellomaker.camp
 tags:
 - Landing Page
+- Meteor.js App
 - Teaching
 - Mentoring
 ---
@@ -19,6 +21,7 @@ How many of us have great ideas? How many of those ideas actually get to see the
 >HelloMaker Camp is a series of hands-on workshops. Students can start with some basic projects or choose more advanced topics.
 
 As a volunteer group, we have created an interactive web application that integrates with Meetup. Students can access question boards for classes they've signed up for on Meetup. These boards help volunteer instructors to understand what topics students are interested in the most. Students can upvote questions, and also see discussions in other classes.
+
 
 ![Interactive class space]({{ site.url }}/assets/hellomaker/screenshot1.jpg)
 <p class="text__caption">Interactive class space.</p>

@@ -5,6 +5,7 @@ permalink: /meenk/
 logo: /assets/meenk/logo.png
 hero-image: /assets/meenk/background.jpeg
 excerpt: Visually rich platform for style and beauty bloggers with a rewarding twist
+activeUrl: meenk.me
 tags:
 - Branding
 - User Research

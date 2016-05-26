@@ -12,6 +12,9 @@ layout: base
     <p class="portfolio__label">Project</p>
     <h1 class="portfolio__title">{{ page.title }}</h1>
     <p class="portfolio__description">{{ page.excerpt }}</p>
+    {% if page.url %}
+      <a class="portfolio__active-url"href="http://{{ page.activeUrl }}" target="_blank">{{ page.activeUrl }}</a>
+    {% endif %}
     <ul class="portfolio__tags">
       {% for tags in page.tags %}
         <li class="portfolio__tag">{{ tags }}</li>
