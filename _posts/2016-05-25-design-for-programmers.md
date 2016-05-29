@@ -6,9 +6,9 @@ category: design
 excerpt: Design is a learnable skill. I've summed up a few rules and techniques you can use to build user-friendly and nicer looking interfaces.
 ---
 
-### Design is a skill
-
 Design is not as elusive as people think it is. It is a learnable skill. Design has rules that anyone can apply to their work. If you are an engineer working on an application or a business guy putting together a slide deck, there are a few tricks you can learn.
+
+### Design Primer
 
 There are three components to designing anything:
 
@@ -18,29 +18,34 @@ There are three components to designing anything:
 
 _Disclaimer: I am a product designer, so I will use product design as a reference point, but you can use the same principles for anything else._
 
-Esthetics is fueled by traditional rules of visual design. The core components of visual language are grid systems, typography, color theory, and motion. Esthetics is not just a "making things pop", but a visual language. It is a skill to communicate through visuals.
+**Esthetics** is fueled by traditional principles of visual design. The core components of the visual design are grid systems, typography, color theory, and motion. Esthetics is not just "making things pop", but a visual language. It is a skill to communicate through visuals.
 
-Empathy is understanding of who you are designing for. In product design, it's called User Research or UX. It doesn't matter how well you are communicating if you don't know who you are talking to or what they want to talk about. Design is never in a vacuum. It has a purpose and problem at the core.
+**Empathy** is understanding of who you are designing for. In product design, it's called User Research or UXD. It doesn't matter how well you are communicating if you don't know who you are talking to or what they want to talk about. Design is never in a vacuum. It has a purpose and problem at the core.
 
-Finally, you need to know design tools to design. Design tools span from doodling on a napkin to Processing and D3.js. I can imagine the first thing that comes to your mind is Photoshop, maybe Illustrator. Coding is just as valid. In fact, many product designers switch to code or use hybrid—GUI/code—tools like Framer.js.
+Finally, you need to know **design tools** to design. Design tools span from doodling on a napkin to Processing and D3.js. I can imagine the first thing that comes to your mind is Photoshop, maybe Illustrator. Code is just as valid. In fact, many product designers switch to code or use hybrid, GUI/code, tools like Framer.js.
 
-That's it. Learn how to use a visual language, figure out who you want to design for and what problem you are solving, and finally, learn a few tools.
+>That's it. Learn how to use a visual language, figure out who you want to design for and what problem you are solving, and finally, learn a few tools.
 
-Let's go over the basics of the visual language, a.k.a esthetics.
+#### Example
+I will take a real product and apply the rules of design throughout this article. I have chosen an educational website (because I like education) that offers online courses. My first critique is that the page looks too busy; your eyes don't know where to look. So first, I will completely strip it off all the style and leave just the content.
 
 ### Rule 1. Grids
 
-Everything needs to be aligned. The first thing that would drastically change how you design is alignment. It means that all elements on your website, application, or slide deck sit on a grid.
+Everything needs to be aligned. The first thing that would drastically change how you design is alignment. It means that all elements on your website, application, or slide deck sit on a grid, vertical and horizontal.
 
 #### Typographic Grid
 
-The traditional typographic grid consists of columns, gutter, modules, negative space, margins, and baseline. Some common print layouts are a manuscript, columns and blocks. The typographic grid can be as simple or as advanced as you want it to be because there is very little technical limitations.
+The traditional typographic grid consists of columns, gutter, modules, negative space, margins, and baseline. Some common print layouts are a _manuscript_, _columns_ and _blocks_. The typographic grid can be as simple or as advanced as you want it to be because there is very little technical limitations.
 
 #### Web Grid
 
-Web grid tries to be just as good as typographic but is limited by web browser capabilities. It is inspired by typography, but much less sophisticated. You can easily drop in a CSS grid into your project. There is an abundance of grid frameworks out there. My personal favourite is Neat.io
+Web grid tries to be just as good as typographic but is limited by the web browser capabilities. It is inspired by print but is much less sophisticated.
 
-Any grid framework will provide you with a column system. The most common systems are 12, 16, and 24 columns in a container. Very easy.
+The choice of a grid will highly depend on the type of a project you are working on. If you are creating a blog, you would want a grid system that has a bounding container and columns. This type of a grid creates a layout where you can control the total width of the layout. Any grid framework will provide you with a column system. The most common systems are 12, 16, or 24 columns in a container.
+
+You can easily drop in a CSS grid into your project. There is an abundance of grid frameworks out there (960, Bootstrap, Foundation). My personal favorite is Neat.io.
+
+When working on web applications, you probably should consider a grid system that utilizes the entire width of the window and provides modularity. Zurb Foundation for Apps is a framework built specifically for that.
 
 #### Vertical rhythm
 
@@ -52,53 +57,124 @@ Hierarchy conveys what is the most important on the page, and the flow of conten
 
 Another way of drawing attention to an element, apart from blowing it up, is using negative space. Negative or white space is the padding around the element that gives it more weight.
 
-There are some typical web layouts:
-- landing page = half-and-half
-- blog = manuscript
-- dashboard / app = blocks
+### Rule 2. Typography
 
-### Rule 2. Color
+Watch out for the design gang to critique your use of typography. The art of typography is more than 5 centuries old and has hundreds of books dedicated to it. Here are a few tips to avoid smirks from the creative department. All you need to do is find an overall style of the typography and pick a font or two.
 
-The first thing I want to say about color is that it is highly subjective. There are definitely rules behind color schemes, but our perception of color highly depends on our cultural background and experiences. The bottom line, you can apply the rules of color scheme creation, but don’t expect it to have 100% success rate. I will first show you some trends in colors and then we will switch to a color wheel and I’ll show you how it works.
+#### Choosing a quality typeface.
+
+- **Styles**. Look for a typeface that has versatile styles, a few weights of bold and italic. For example, [Sura](https://www.google.com/fonts#UsePlace:use/Collection:Sura) font doesn't have italics, which might turn out problematic.
+- **Kerning** (spacing between characters). You cannot really fix bad kerning with CSS, so look for fonts that have neat, proportional kerning. See how some letters almost touch each other on [Ecgar](https://www.google.com/fonts/specimen/Eczar). This could decrease realability on smaller font-sizes.
+- **Glyphs**. Check that the font has all the special characters. You probably don't need anything too exotic, but definitely see that the font has a full set of typographic symbols.
+- **Not too gimmicky**. This is more of a feel than a hard rule, but try to stay away from typefaces that has too much character until you feel comfortable with your design choices. [Case in point](https://www.google.com/fonts/specimen/Modak).
+- **Steal**. You don't want to be too original with your typography. Look for inspiration from renowned bloggers and designers. [Typowolf](https://www.typewolf.com/) posts great examples and ideas.
+
+#### Pairing fonts
+
+1. You don’t have to have two fonts. You can use different styles of just one, high-quality font. You can also stay within the same font family, like _Alegreya_ and _Alegreya Sans SC_. Definitely don’t have more than two fonts in one design, unless you are 10000% sure about what you are doing.
+2. Don’t pair two fonts that are not distinct enough. Like _Open Sans_ and _Helvetica_. Users won't be able to tell them apart, but the overall design will feel off. When pairing fonts look for similar skeleton (e.g. x-height), but distinct features.
+
+
+### Rule 3. Color
+
+The first thing I want to say about color is that it is **highly** subjective. There are definitely rules behind color schemes, but our perception of color highly depends on our cultural background and experiences. You can apply the rules of color scheme creation, but don’t expect it to have 100% success rate. I will first show you some trends in colors and then we will switch to a color wheel, and I’ll show you how it works.
+
 Like any creative field, color schemes are affected my trends. Just like in fashion. Often color trends migrate from art to graphic and industrial design and then to web design. Here are a few dominant color trends.
 
-#### Google Material / vibrant colors
-
-https://youtu.be/xYkz0Ueg0L4
-
-#### Pastels
-
-crisp imagery (high speed)
-
-#### Greyscale + accent color
-
-When in doubt always use a grey scale with an accent color. Purple is definitely on the rise
-purple (!!)
-
-Before we jump into working with a color wheel, there is one very important quality of color to know. Our perception of color differs based on size and position of the element.
+When in doubt always use a grey scale with an accent color. Purple is definitely on the rise.
 
 #### Color inspiration
 
-color inspiration ← reserved, unlike traditional graphic design; usability
+Unlike traditional graphic design, colors used on the web and mobile products are usually more reserved. You want to keep usability in mind, and choose high contrast schemes and use colors as part of the visual language. For example, you will probably have one or more accent colors that mean that an element is actionable. You don't want to confuse the user by using the same color on actionable (e.g. buttons) and static (e.g. text) elements.
 
 - Check out Awwwards for some distilled color inspiration for UI (keep project orientation in mind)
 - Pantone color of the year, color books, Pantone nerd blogs (tinypmsmatch.tumblr.com/)
 - take a picture and analyse with Adobe Color (http://www.poppin.com/)
 
-Shades / Monochromatic
-https://color.adobe.com/library/BCB6CE5F-1BD9-4E22-831B-00F4E60859F9/theme/9c06eb3f-7665-4b8f-a5c6-6bc985388e7c/
+#### Color schemes
 
-Analogous
-https://color.adobe.com/library/BCB6CE5F-1BD9-4E22-831B-00F4E60859F9/theme/89152ad6-3e3d-4bae-8026-4572b70f721a/
+**Shades / Monochromatic**. To create a shades or monochromatic scheme you need to pick one hue and create 4 or 5 swatches of different _brightness_ (B in [HSB](https://en.wikipedia.org/wiki/HSL_and_HSV)).
 
-Complementary (Slack/Marsala)
-http://www.pantone.com/why-marsala
-https://color.adobe.com/library/BCB6CE5F-1BD9-4E22-831B-00F4E60859F9/theme/636be1db-5acc-4f5b-ab85-93db530db626/
+Monochromatic schemes are great for base colors for text and supportive elements like borders, backgrounds, shadows, etc.
 
-Triad
-http://touch-it.com.ua/images/products/PS039NLG_16w.jpg
-https://color.adobe.com/library/BCB6CE5F-1BD9-4E22-831B-00F4E60859F9/theme/b8b6f3c1-fd64-4a07-881e-85e2eb0caaae/
+- You would want to have the darkest color have the brightness ~95% and the darkest ~20%.
+- You never want to have your text be an absolute black or #000. 20% black on a white background is much easier on the eyes, thus easier to read.
+- Try adding a slight blue hue to your greys to achive a more modern, cold grey colors.
 
-Gradients
+```Sass
+$grey-colors: (
+  x-light   : #F5F5FA, //HSB 244,2,98
+  light     : #B9B8CC, //HSB 244,2,80
+  medium    : #706F7F, //HSB 244,2,50
+  dark      : #383740, //HSB 244,2,25
+  x-dark    : #2D2C33  //HSB 244,2,20
+);
 
-### Rule 3. Typography
+```
+
+<p class="text__caption">Monochromatic schemes in a Sass map.</p>
+
+<p class="text__caption"><a href="https://color.adobe.com/Wet-Asphalt-color-theme-6421623/" target="_blank">Wet Asphalt</a> on Adobe Color.</p>
+
+**Analogous** schemes are the most popular in product design today. To create an analogous scheme, you want to take two colors of a similar _hue_, and use them with not necessarily contrasting, but noticeably different _brightness_.
+
+To create this Mint Navy scheme I'm using the _hue_ of 161 and 209 and _brightness_ of 88 and 50. So not too far apart, but still noticeably different. Then I am complimenting the scheme with two grey colors that use the same hue as the navy color.
+
+You can try the same formula on other colors.
+
+```Sass
+$analogous-theme: (
+  primary   : #51E0B3, //HSB 161,64,88
+  secondary : #2E587F, //HSB 209,64,50
+  light     : #F5F5FA, //HSB 240,2,98
+  dark      : #36414C, //HSB 209,30,30
+  x-dark    : #292E33  //HSB 209,20,20
+);
+
+```
+
+<p class="text__caption"><a href="https://color.adobe.com/Mint-Navy-color-theme-6421656/" target="_blank">Mint Navy</a> on Adobe Color.</p>
+
+**Complementary** schemes use two colors on the opposite sides of the spectrum (think IKEA). As you can imagine, complementary schemes in it's pure forms look outdated and aren't as popular anymore.
+
+You can try creating a complementary scheme with an interesting twist like the one in [Slack](https://slack.com/) design. You are still going to take two colors that are opposites in their _hue_, but then also make them contrasting in _saturation_ and _brightness_. You can see that Slack is using a  deep, muted aubergine color with bright green.
+
+I've created a bit milder theme, where the green is not so bright.
+
+```Sass
+$complementary-theme: (
+  primary   : #8FCCCC, //HSB 180,30,80
+  secondary : #542B38, //HSB 341,49,33
+  light     : #F0FAFA, //HSB 180,4,98
+  dark      : #4C4549, //HSB 327,10,30
+  x-dark    : #332E31  //HSB 327,10,20
+);
+
+```
+
+<p class="text__caption"><a href="https://color.adobe.com/Copy-of-Wine-and-Robin-color-theme-6471730/" target="_blank">Wine and Robin</a> on Adobe Color.</p>
+
+**Triad** schemes are tricky to create because they use three different color hues. Just as with complimentary schemes, to create a modern-looking triad scheme alternate _saturation_ and _brightness_.
+
+```Sass
+$triad-theme: (
+  primary   : #1F3557, //HSB 216,64,34
+  secondary : #D5FFAB, //HSB 90,33,100
+  terciary  : #FF6B6B, //HSB 360,58,100
+  medium    : #7A8799, //HSB 216,20,60
+  dark      : #121F33  //HSB 216,64,20
+);
+
+```
+
+<p class="text__caption"><a href="https://color.adobe.com/Vibrant-116-color-theme-6603338/" target="_blank">Vibrant 116</a> on Adobe Color.</p>
+
+#### Gradients
+Gradients are very popular in modern design. Gradients were re-introduced in its new, "flat" version at the release of iOS7. There are two major trends in creating gradients.
+
+**Subtle** gradients use two or three very similar colors. Subtle gradients are based on analogues color schemes. When creating a subtle gradient, pick colors that are almost identical in _saturation_ and _brightness_ and are also very close in _hue_. The difference in _hue_ should be as little as 10 or 15.
+
+**Accent** gradients are the new kid on the block. Accent gradients are based on triad or complementary patterns. There is still no solid opinion on whether the use of such dramatic gradients is genius or kitsch. So use with caution. I would highly recommend using these gradients just for small accents (_hence the name_), and not on any big elements.
+
+### Final Thoughts
+It might not all make sense now… but practice makes perfect. Happy designing!
