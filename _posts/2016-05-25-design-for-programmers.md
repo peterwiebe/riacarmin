@@ -22,7 +22,7 @@ _Disclaimer: I am a product designer, so I will use product design as a referenc
 
 **Empathy** is understanding of who you are designing for. In product design, it's called User Research or UXD. It doesn't matter how well you are communicating if you don't know who you are talking to or what they want to talk about. Design is never in a vacuum. It has a purpose and problem at the core.
 
-Finally, you need to know **design tools** to design. Design tools span from doodling on a napkin to Processing and D3.js. I can imagine the first thing that comes to your mind is Photoshop, maybe Illustrator. Code is just as valid. In fact, many product designers switch to code or use hybrid, GUI/code, tools like Framer.js.
+Finally, you need to know **design tools** to design. Design tools span from doodling on a napkin to [Processing](https://p5js.org/) and [D3.js](https://d3js.org/). I can imagine the first thing that comes to your mind is Photoshop, maybe Illustrator. Code also can be a design tool. In fact, many product designers switch to code or use hybrid, GUI/code, tools like [Framer.js](http://framerjs.com/).
 
 >That's it. Learn how to use a visual language, figure out who you want to design for and what problem you are solving, and finally, learn a few tools.
 
@@ -43,13 +43,13 @@ Web grid tries to be just as good as typographic but is limited by the web brows
 
 The choice of a grid will highly depend on the type of a project you are working on. If you are creating a blog, you would want a grid system that has a bounding container and columns. This type of a grid creates a layout where you can control the total width of the layout. Any grid framework will provide you with a column system. The most common systems are 12, 16, or 24 columns in a container.
 
-You can easily drop in a CSS grid into your project. There is an abundance of grid frameworks out there (960, Bootstrap, Foundation). My personal favorite is Neat.io.
+You can easily drop in a CSS grid into your project. There is an abundance of grid frameworks out there (960, Bootstrap, Foundation). My personal favorite is [Neat.io](http://neat.bourbon.io/).
 
-When working on web applications, you probably should consider a grid system that utilizes the entire width of the window and provides modularity. Zurb Foundation for Apps is a framework built specifically for that.
+When working on web applications, you probably should consider a grid system that utilizes the entire width of the window and provides modularity. [Zurb Foundation for Apps](http://foundation.zurb.com/apps.html) is a framework built specifically for that.
 
 #### Vertical rhythm
 
-Now the tricky part, vertical rhythm. Vertical rhythm or baseline grid is a horizontal grid of your layout. There is no easy way to implement a baseline grid on the web. I like implementing it with a simple Sass map and then checking it with Basehold.it.
+Now the tricky part, vertical rhythm. Vertical rhythm or baseline grid is a horizontal grid of your layout. There is no easy way to implement a baseline grid on the web. I like implementing it with a [simple Sass map](https://scotch.io/tutorials/aesthetic-sass-3-typography-and-vertical-rhythm) and then checking it with [Basehold.it](http://basehold.it/).
 
 #### Hierarchy
 
@@ -83,13 +83,15 @@ Like any creative field, color schemes are affected my trends. Just like in fash
 
 When in doubt always use a grey scale with an accent color. Purple is definitely on the rise.
 
+<p class="text__caption">Trending color schemes.</p>
+
 #### Color inspiration
 
 Unlike traditional graphic design, colors used on the web and mobile products are usually more reserved. You want to keep usability in mind, and choose high contrast schemes and use colors as part of the visual language. For example, you will probably have one or more accent colors that mean that an element is actionable. You don't want to confuse the user by using the same color on actionable (e.g. buttons) and static (e.g. text) elements.
 
-- Check out Awwwards for some distilled color inspiration for UI (keep project orientation in mind)
-- Pantone color of the year, color books, Pantone nerd blogs (tinypmsmatch.tumblr.com/)
-- take a picture and analyse with Adobe Color (http://www.poppin.com/)
+- Check out [Awwwards](http://www.awwwards.com/) for some distilled color inspiration for UI (keep project orientation in mind)
+- Pantone color of the year, color books, [Pantone nerd blogs](http://tinypmsmatch.tumblr.com/)
+- Take photos of cools stuff, especially industrial design, and analyse with [Adobe Color](color.adobe.com/)
 
 #### Color schemes
 
