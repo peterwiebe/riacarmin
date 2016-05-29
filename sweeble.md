@@ -42,7 +42,7 @@ The app has been released on AppStore and Play Store, and has an interactive lan
 <p class="text__caption">iOS app on the AppStore.</p>
 
 
-<div class="portfolio__viewer js-flickity">
+<div class="portfolio__viewer js-flickity" data-flickity-options='{ "imagesLoaded": true, "percentPosition": false }'>
 	<img src="/assets/sweeble/Sweeble-page-001.jpg" alt="Sweeble. Slide Deck. Documentation">
 	<img src="/assets/sweeble/Sweeble-page-002.jpg" alt="Sweeble. Slide Deck. Documentation">
 	<img src="/assets/sweeble/Sweeble-page-003.jpg" alt="Sweeble. Slide Deck. Documentation">

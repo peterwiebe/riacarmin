@@ -1,0 +1,226 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Design for Programmers</title>
+    <meta name="description" content="Design is a learnable skill. I've summed up a few rules and techniques you can use to build user-friendly and nicer looking interfaces.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link href="https://file.myfontastic.com/pv3vCfZW9HgVQLUXANf8va/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="/javascripts/vendor/modernizr-2.8.3.min.js"></script>
+    <!-- FACEBOOK -->
+<meta property="og:url" content="/design/design-for-programmers/" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Design for Programmers" />
+<meta property="og:description" content="Design is a learnable skill. I've summed up a few rules and techniques you can use to build user-friendly and nicer looking interfaces." />
+
+<meta property="og:image" content="/assets/og-image.png" />
+
+
+
+<!-- TWITTER -->
+
+<meta name="twitter:card" content="summary" />
+
+<meta name="twitter:site" content="@riacarmin" />
+    
+
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+    <link rel="canonical" href="/design/design-for-programmers/">
+    <link rel="alternate" type="application/rss+xml" title="Ria Carmin | UX UI Designer" href="/feed.xml" />
+
+</head>
+<body class="animsition">
+
+  <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  
+<nav class="navigation">
+
+
+  <div class="navigation__inner mobile-container">
+    <div class="navigation__left">
+      
+        <a href="/" class="navigation__name navigation__name--regular">Ria Carmin</a>
+      
+
+      
+
+    </div>
+    <div class="navigation__right">
+      
+      <a href="javascript:history.back(1)" class="navigation__item">close <i class="navigation__back icon-close"></i></a>
+      
+    </div>
+  </div>
+</nav>
+
+<main class="post__main mobile-container">
+  <h1 class="post__title">Design for Programmers</h1>
+  <article class="post__content">
+    <p class="post__date">May 25, 2016</p>
+    <h3 id="design-is-a-skill">Design is a skill</h3>
+
+<p>Design is not as elusive as people think it is. It is a learnable skill. Design has rules that anyone can apply to their work. If you are an engineer working on an application or a business guy putting together a slide deck, there are a few tricks you can learn.</p>
+
+<p>There are three components to designing anything:</p>
+
+<ul>
+  <li>Esthetics</li>
+  <li>Empathy</li>
+  <li>Means of production</li>
+</ul>
+
+<p><em>Disclaimer: I am a product designer, so I will use product design as a reference point, but you can use the same principles for anything else.</em></p>
+
+<p>Esthetics is fueled by traditional rules of visual design. The core components of visual language are grid systems, typography, color theory, and motion. Esthetics is not just a “making things pop”, but a visual language. It is a skill to communicate through visuals.</p>
+
+<p>Empathy is understanding of who you are designing for. In product design, it’s called User Research or UX. It doesn’t matter how well you are communicating if you don’t know who you are talking to or what they want to talk about. Design is never in a vacuum. It has a purpose and problem at the core.</p>
+
+<p>Finally, you need to know design tools to design. Design tools span from doodling on a napkin to Processing and D3.js. I can imagine the first thing that comes to your mind is Photoshop, maybe Illustrator. Coding is just as valid. In fact, many product designers switch to code or use hybrid—GUI/code—tools like Framer.js.</p>
+
+<p>That’s it. Learn how to use a visual language, figure out who you want to design for and what problem you are solving, and finally, learn a few tools.</p>
+
+<p>Let’s go over the basics of the visual language, a.k.a esthetics.</p>
+
+<h3 id="rule-1-grids">Rule 1. Grids</h3>
+
+<p>Everything needs to be aligned. The first thing that would drastically change how you design is alignment. It means that all elements on your website, application, or slide deck sit on a grid.</p>
+
+<h4 id="typographic-grid">Typographic Grid</h4>
+
+<p>The traditional typographic grid consists of columns, gutter, modules, negative space, margins, and baseline. Some common print layouts are a manuscript, columns and blocks. The typographic grid can be as simple or as advanced as you want it to be because there is very little technical limitations.</p>
+
+<h4 id="web-grid">Web Grid</h4>
+
+<p>Web grid tries to be just as good as typographic but is limited by web browser capabilities. It is inspired by typography, but much less sophisticated. You can easily drop in a CSS grid into your project. There is an abundance of grid frameworks out there. My personal favourite is Neat.io</p>
+
+<p>Any grid framework will provide you with a column system. The most common systems are 12, 16, and 24 columns in a container. Very easy.</p>
+
+<h4 id="vertical-rhythm">Vertical rhythm</h4>
+
+<p>Now the tricky part, vertical rhythm. Vertical rhythm or baseline grid is a horizontal grid of your layout. There is no easy way to implement a baseline grid on the web. I like implementing it with a simple Sass map and then checking it with Basehold.it.</p>
+
+<h4 id="hierarchy">Hierarchy</h4>
+
+<p>Hierarchy conveys what is the most important on the page, and the flow of content. Headers are usually bigger than the paragraph text, and it draws people’s attention to headers first, and also allows them to skim the content.</p>
+
+<p>Another way of drawing attention to an element, apart from blowing it up, is using negative space. Negative or white space is the padding around the element that gives it more weight.</p>
+
+<p>There are some typical web layouts:
+- landing page = half-and-half
+- blog = manuscript
+- dashboard / app = blocks</p>
+
+<h3 id="rule-2-color">Rule 2. Color</h3>
+
+<p>The first thing I want to say about color is that it is highly subjective. There are definitely rules behind color schemes, but our perception of color highly depends on our cultural background and experiences. The bottom line, you can apply the rules of color scheme creation, but don’t expect it to have 100% success rate. I will first show you some trends in colors and then we will switch to a color wheel and I’ll show you how it works.
+Like any creative field, color schemes are affected my trends. Just like in fashion. Often color trends migrate from art to graphic and industrial design and then to web design. Here are a few dominant color trends.</p>
+
+<h4 id="google-material--vibrant-colors">Google Material / vibrant colors</h4>
+
+<p>https://youtu.be/xYkz0Ueg0L4</p>
+
+<h4 id="pastels">Pastels</h4>
+
+<p>crisp imagery (high speed)</p>
+
+<h4 id="greyscale--accent-color">Greyscale + accent color</h4>
+
+<p>When in doubt always use a grey scale with an accent color. Purple is definitely on the rise
+purple (!!)</p>
+
+<p>Before we jump into working with a color wheel, there is one very important quality of color to know. Our perception of color differs based on size and position of the element.</p>
+
+<h4 id="color-inspiration">Color inspiration</h4>
+
+<p>color inspiration ← reserved, unlike traditional graphic design; usability</p>
+
+<ul>
+  <li>Check out Awwwards for some distilled color inspiration for UI (keep project orientation in mind)</li>
+  <li>Pantone color of the year, color books, Pantone nerd blogs (tinypmsmatch.tumblr.com/)</li>
+  <li>take a picture and analyse with Adobe Color (http://www.poppin.com/)</li>
+</ul>
+
+<p>Shades / Monochromatic
+https://color.adobe.com/library/BCB6CE5F-1BD9-4E22-831B-00F4E60859F9/theme/9c06eb3f-7665-4b8f-a5c6-6bc985388e7c/</p>
+
+<p>Analogous
+https://color.adobe.com/library/BCB6CE5F-1BD9-4E22-831B-00F4E60859F9/theme/89152ad6-3e3d-4bae-8026-4572b70f721a/</p>
+
+<p>Complementary (Slack/Marsala)
+http://www.pantone.com/why-marsala
+https://color.adobe.com/library/BCB6CE5F-1BD9-4E22-831B-00F4E60859F9/theme/636be1db-5acc-4f5b-ab85-93db530db626/</p>
+
+<p>Triad
+http://touch-it.com.ua/images/products/PS039NLG_16w.jpg
+https://color.adobe.com/library/BCB6CE5F-1BD9-4E22-831B-00F4E60859F9/theme/b8b6f3c1-fd64-4a07-881e-85e2eb0caaae/</p>
+
+<p>Gradients</p>
+
+<h3 id="rule-3-typography">Rule 3. Typography</h3>
+
+  </article>
+  <aside class="post__aside">
+    <p class="post__label">excerpt</p>
+    <p class="post__excerpt">Design is a learnable skill. I've summed up a few rules and techniques you can use to build user-friendly and nicer looking interfaces.</p>
+    <p class="post__label">other</p>
+    <ul>
+      
+        <li>
+          <a href="/design/design-for-programmers/">Design for Programmers</a>
+        </li>
+      
+        <li>
+          <a href="/design/paper-prototyping/">Paper Prototyping</a>
+        </li>
+      
+        <li>
+          <a href="/research/ethnosemantics-in-ux-design.html">Ethnosemantics in UX Design</a>
+        </li>
+      
+    </ul>
+  </aside>
+</main>
+<footer class="footer">
+  <div class="footer__container mobile-container">
+    <div class="footer__left">
+      <p>&copy; <em class="footer__name">Ria Carmin</em> 2016</p>
+      
+    </div>
+    <div class="footer__right">
+      <a href="/">Email</a><a href="">Twitter</a><a href="">LinkedIn</a><a href="">Exposure</a>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+
+<script>window.jQuery || document.write("<script src='/javascripts/vendor/jquery-2.2.3.min.js'><\/script>")</script>
+
+<script src="/javascripts/vendor/EasePack.min.js"></script>
+<script src="/javascripts/vendor/rAF.js"></script>
+<script src="/javascripts/vendor/TweenLite.min.js"></script>
+
+<script src="/javascripts/vendor/isotope.pkgd.min.js"></script>
+<script src="/javascripts/vendor/masonry-horizontal.js"></script>
+<script src="/javascripts/vendor/flickity.pkgd.min.js"></script>
+<script src="/javascripts/vendor/jquery.smooth-scroll.js"></script>
+<script src="/javascripts/vendor/animsition.min.js"></script>
+<script src="/javascripts/plugins.js"></script>
+<script src="/javascripts/main.js"></script>
+
+
+
+
+</body>
+</html>

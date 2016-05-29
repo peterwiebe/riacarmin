@@ -15,7 +15,7 @@ I worked on a project that needed a solid user research foundation. Elly was a c
 
 >&hellip;the team needed to tap into user behaviours around planning trips
 
-<div class="portfolio__viewer js-flickity">
+<div class="portfolio__viewer js-flickity" data-flickity-options='{ "imagesLoaded": true, "percentPosition": false }'>
 	<img src="/assets/elly/elly-documentation-1.jpg" alt="Elly. Travel App. Documentation">
 	<img src="/assets/elly/elly-documentation-2.jpg" alt="Elly. Travel App. Documentation">
 	<img src="/assets/elly/elly-documentation-3.jpg" alt="Elly. Travel App. Documentation">

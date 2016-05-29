@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Blogging Like a Hacker
+title: Journal and Notes | Ria Carmin | UX UI Designer
 permalink: /journal/
 ---
 
@@ -12,16 +12,23 @@ permalink: /journal/
     <div class="container journal__wrapper">
     <div class="journal__grid">
       <div class="journal__item--sizer"></div>
-      <div class="journal__item">
-        <div class="journal__post">
-          <div class="journal__placeholder">&nbsp;</div>
-          <h3 class="journal__title">The Wireframe</h3>
-          <p class="journal__tag">architecture</p>
-          <p class="journal__tag">semantics</p>
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, consectetur aut delectus officiis. Consequatur quae aut enim nesciunt nulla ad ut tempora at corrupti, voluptatem assumenda harum accusantium cum fuga.</p>
-        </div>
-      </div>
+
+          {% for post in site.posts %}
+          <div class="journal__item"><div class="journal__post">
+
+            {% if post.image %}
+              <img src="http://placehold.it/350x150" alt="">
+            {% else %}
+              <div class="journal__placeholder">&nbsp;</div>
+            {% endif %}
+
+            <h3 class="journal__title"><a class="animsition-link" href="{{ post.url }}">{{ post.title }}</a></h3>
+            <p class="journal__tag">{{ post.category }}</p>
+            <p>{{ post.excerpt }}</p>
+
+          </div></div>
+          {% endfor %}
+
       </div>
     </div>
   </div>
