@@ -81,7 +81,17 @@ The first thing I want to say about color is that it is **highly** subjective. T
 
 Like any creative field, color schemes are affected my trends. Just like in fashion. Often color trends migrate from art to graphic and industrial design and then to web design. Here are a few dominant color trends.
 
+- Material Design
+- Pastels with crisp photography
+- Greyscale with one accent color
+
 When in doubt always use a grey scale with an accent color. Purple is definitely on the rise.
+
+<div class="portfolio__viewer js-flickity" data-flickity-options='{ "imagesLoaded": true, "percentPosition": false }'>
+  <img src="/assets/design-for-programmers/design-for-programmers.014.jpeg" alt="Trending color schemes.">
+  <img src="/assets/design-for-programmers/design-for-programmers.015.jpeg" alt="Trending color schemes.">
+  <img src="/assets/design-for-programmers/design-for-programmers.016.jpeg" alt="Trending color schemes.">
+</div>
 
 <p class="text__caption">Trending color schemes.</p>
 
