@@ -72,7 +72,12 @@
     }
 
     function resize() {
-        width = window.innerWidth / 2;
+        if (screen.width < 599) {
+            width = window.innerWidth;
+        }
+        else {
+            width = window.innerWidth / 2;
+        }
         height = window.innerHeight;
         coverAnimation.style.height = height+'px';
         canvas.width = width;
