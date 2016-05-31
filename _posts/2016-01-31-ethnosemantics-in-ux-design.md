@@ -7,11 +7,13 @@ permalink: /:categories/:title.html
 excerpt: I was inspired by the holistic approach of ethnosemantics and wanted to write an article about it. Information architecture takes the form of navigations, labels, metadata, search algorithms, everything that has words in it, ethnosemantics have a lot to contribute to it.
 ---
 
-### What problem are we solving?
+## What problem are we solving?
+
 -  You are designing or building an app for a group of people you don’t identify yourself with (be honest, it is most likely true)
 -  You want to innovate discovery within your application
 
-### How can ethnosemantics help design better interfaces?
+## How can ethnosemantics help design better interfaces?
+
 I don’t think anyone would argue with me on that the interface should speak the language of your users. The use of language is a learned and shared behavior, thus it’s unique to each cultural group. If you think about your users as a cultural group (“single parents”, “nurses”, “urban dog owners”, etc.), your goal is to learn their language.
 
 Ethnosemantics is a branch of Anthropology that offers a great body or research and methods to understand how people use language and relate different concepts. Traditionally, it is used by anthropologists to study cultural groups, but the same research techniques can be used to understand users of your application or website.
@@ -20,7 +22,7 @@ Ethnosemantics is a branch of Anthropology that offers a great body or research 
 
 This article was greatly inspired by the work of anthropologists Spradley and McCurdy. They have developed a systematic approach of discovering, systematizing and understanding taxonomies (or “folk terms”, whatever people call things).
 
-### Discover
+## Discover
 The first discovery stage is mostly _interviewing_ your users (not talking to). It is not specific to learning the language, but something that could greatly improve your user experience in general. This empathetic step will help you understand people you are building the product for on a different level. Not just numbers and statistics, but who they _really_ are. This is a half-an-hour technique inspired by anthropologic methods. You should give it a try.
 
 1. Start with a **Grand Tour**. It is a good way to find topics you might be interested in. Ask questions like “Could you describe what a day of a single dad looks like?”, “Could you describe the hospital you are working at”. The goal is to get a general vocabulary set for a place or action.
@@ -43,7 +45,7 @@ In my experience, the best way to do so is to use a tool like Evernote, so you c
 
 Let’s take Acorns app as an example. It allows users to invest their change from purchases (_Disclaimer: I don’t know what research the creators of Acorn conducted or what they’ve based their design decision on. I am just using their app as an example for potential research_). The designers used terms like “government bonds”, “large cap”, “small cap”, “diversified portfolio”. The app is targeting people who have little investment experience and wouldn't mind to start with something small like change. The user research could define what language these people use when it comes to finances use or what domain knowledge they have.
 
-### Taxonomic Structure
+## Taxonomic Structure
 The purpose of identifying the taxonomic structure is to understand how your users relate concepts to each other. Taxonomic structures are especially important when designing navigation, indexes, or search algorithms. Take a look at these examples of taxonomies in practice.
 
 <div class="figure__container">
