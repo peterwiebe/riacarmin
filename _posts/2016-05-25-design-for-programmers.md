@@ -29,7 +29,7 @@ Finally, you need to know **design tools** to design. Design tools span from doo
 -------
 
 ### Example
-I will take a real product and apply the rules of design throughout this article. I have chosen an educational website (because I like education) that offers online courses. _I will not make any structural changes, bacuse it is outside the scope of this post._
+I will take a real product and apply the rules of design throughout this article. I have chosen an educational website (because I like education) that offers online courses. _I will not make any structural changes, because it is outside the scope of this post._
 
 My first critique is that the page looks too busy; your eyes don't know where to look. So first, I will completely strip it off all the style and leave just the content.
 
@@ -53,7 +53,7 @@ The traditional typographic grid consists of columns, gutter, modules, negative 
 
 Web grid tries to be just as good as typographic but is limited by the web browser capabilities. It is inspired by print but is much less sophisticated.
 
-The choice of a grid will highly depend on the type of a project you are working on. For most projects you will need a grid system that has a **bounding container** for the columns. That means that the total width is a fixed numer, like 960px or 68em. Using a bounding container ensures that your text is still readible on large screens. Anything from **45 to 75 characters per line is ideal for readablility**.
+The choice of a grid will highly depend on the type of a project you are working on. For most projects you will need a grid system that has a **bounding container** for the columns. That means that the total width is a fixed number, like 960px or 68em. Using a bounding container ensures that your text is still readable on large screens. Anything from **45 to 75 characters per line is ideal for readability**.
 
 You can easily drop in a CSS grid into your project. It's hard to think of an example where you would want to code a grid system from scratch. There is an abundance of grid frameworks out there (960, Bootstrap, Foundation). Any grid framework will provide you with a column system. The most common systems are 12, 16, or 24 columns in a container. My personal favorite is [Neat.io](http://neat.bourbon.io/), because it provides solid defaults, but is also easily customizable.
 
@@ -88,11 +88,11 @@ Another way of drawing attention to an element, apart from blowing it up, is usi
 -------
 
 ### Example
-The first thing I've done is applied a grid to this page. Some elements like the school logos and course cards are misaligned.
+The first thing I've done was applying a grid to the page. Some elements like the school logos and course cards were misaligned.
 
 1. I've applied the baseline grid and aligned all the text to it.
-2. Containers like navigation and school logo section are now also aligned to the baseline grid. Also, I've aligned the school logos, which take two columns.
-3. White or neganive space around the headers give them a higher value in hierarchy, which make them more noticable.
+2. Containers like navigation and school logo section are now also aligned to the baseline grid. Also, I've aligned the school logos, which take two columns each.
+3. White or negative space around the headers gives them a higher value in the hierarchy, which makes them more noticeable.
 
 <div class="portfolio__viewer js-flickity" data-flickity-options='{ "imagesLoaded": true, "percentPosition": false }'>
   <img src="/assets/design-for-programmers/step-1-grid.png" alt="Step 1 grid.">
@@ -103,12 +103,12 @@ The first thing I've done is applied a grid to this page. Some elements like the
 
 ## Rule 2. Typography
 
-Watch out for the design gang to critique your use of typography. The art of typography is more than 5 centuries old and has hundreds of books dedicated to it. Here are a few tips to avoid smirks from the creative department. All you need to do is find an overall style of the typography and pick a font or two.
+Watch out for the design gang to critique your use of typography. The art of typography is more than 5 centuries old and has hundreds of books dedicated to it. Here are a few tips to avoid smirks from the creative department.
 
 ### Choosing a quality typeface.
 
 - **Styles**. Look for a typeface that has versatile styles, a few weights of bold and italic. For example, [Sura](https://www.google.com/fonts#UsePlace:use/Collection:Sura) font doesn't have italics, which might turn out problematic.
-- **Kerning** (spacing between characters). You cannot really fix bad kerning with CSS, so look for fonts that have neat, proportional kerning. See how some letters almost touch each other on [Ecgar](https://www.google.com/fonts/specimen/Eczar). This could decrease realability on smaller font-sizes.
+- **Kerning** (spacing between characters). You cannot really fix bad kerning with CSS, so look for fonts that have neat, proportional kerning. See how some letters almost touch each other on [Ecgar](https://www.google.com/fonts/specimen/Eczar). This could decrease readability on smaller font-sizes.
 - **Glyphs**. Check that the font has all the special characters. You probably don't need anything too exotic, but definitely see that the font has a full set of typographic symbols.
 - **Not too gimmicky**. This is more of a feel than a hard rule, but try to stay away from typefaces that has too much character until you feel comfortable with your design choices. [Case in point](https://www.google.com/fonts/specimen/Modak).
 - **Steal**. You don't want to be too original with your typography. Look for inspiration from renowned bloggers and designers. [Typowolf](https://www.typewolf.com/recommendations) posts great examples and recommendation.
@@ -130,7 +130,7 @@ Watch out for the design gang to critique your use of typography. The art of typ
 -----
 
 ### Example
-I have chosen a modern, edgy sans-serif font Titillium paired with subtle Work Sans.
+I have chosen a modern, edgy sans-serif font [Titillium](https://www.google.com/fonts/specimen/Titillium+Web) paired with subtle [Work Sans](https://www.google.com/fonts/specimen/Work+Sans). Both fonts are sans-serifs. Titillium definitely has more character, which makes it a good heading fonts. Work Sans is a high-quality sans serif with a wide variety of styles.
 
 <img src="/assets/design-for-programmers/font-pairing.png" alt="Step 2 Typography">
 
@@ -169,13 +169,13 @@ Unlike traditional graphic design, colors used on the web and mobile products ar
 
 ### Color schemes
 
-**Shades / Monochromatic**. To create a shades or monochromatic scheme you need to pick one hue and create 4 or 5 swatches of different _brightness_ (B in [HSB](https://en.wikipedia.org/wiki/HSL_and_HSV)).
+**Shades / Monochromatic**. To create a monochromatic scheme you need to pick one hue and create 4 or 5 swatches of different _brightness_ (B in [HSB](https://en.wikipedia.org/wiki/HSL_and_HSV)).
 
 Monochromatic schemes are great for base colors for text and supportive elements like borders, backgrounds, shadows, etc.
 
 - You would want to have the darkest color have the brightness ~95% and the darkest ~20%.
 - You never want to have your text be an absolute black or #000. 20% black on a white background is much easier on the eyes, thus easier to read.
-- Try adding a slight blue hue to your greys to achive a more modern, cold grey colors.
+- Try adding a slight blue hue to your greys to achieve a more modern, cold grey colors.
 
 ```Sass
 $grey-colors: (
@@ -196,7 +196,7 @@ $grey-colors: (
 
 **Analogous** schemes are the most popular in product design today. To create an analogous scheme, you want to take two colors of a similar _hue_, and use them with not necessarily contrasting, but noticeably different _brightness_.
 
-To create this Mint Navy scheme I'm using the _hue_ of 161 and 209 and _brightness_ of 88 and 50. So not too far apart, but still noticeably different. Then I am complimenting the scheme with two grey colors that use the same hue as the navy color.
+To create this Mint Navy scheme, I'm using the _hue_ of 161 and 209 and _brightness_ of 88 and 50. So not too far apart, but still noticeably different. Then I am complimenting the scheme with two grey colors that use the same hue as the navy color.
 
 You can try the same formula on other colors.
 
@@ -217,7 +217,7 @@ $analogous-scheme: (
 
 <p class="text__caption"><a href="https://color.adobe.com/Mint-Navy-color-theme-6421656/" target="_blank">Mint Navy</a> on Adobe Color.</p>
 
-**Complementary** schemes use two colors on the opposite sides of the spectrum (think IKEA). As you can imagine, complementary schemes in it's pure forms look outdated and aren't as popular anymore.
+**Complementary** schemes use two colors on the opposite sides of the spectrum (think IKEA). As you can imagine, complementary schemes in its pure forms look outdated and aren't as popular anymore.
 
 You can try creating a complementary scheme with an interesting twist like the one in [Slack](https://slack.com/) design. You are still going to take two colors that are opposites in their _hue_, but then also make them contrasting in _saturation_ and _brightness_. You can see that Slack is using a  deep, muted aubergine color with bright green.
 
@@ -268,9 +268,9 @@ Gradients are very popular in modern design. Gradients were re-introduced in its
 ```SASS
 
 .subtle-gradient {
-	background: #FF5F6D; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #FF5F6D , #FFC371); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to left, #FF5F6D , #FFC371); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #FF5F6D; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FF5F6D , #FFC371); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FF5F6D , #FFC371); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 ```
 
@@ -284,9 +284,9 @@ Gradients are very popular in modern design. Gradients were re-introduced in its
 ```SASS
 
 .accent-gradient {
-	background: #FF5F6D; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #FF5F6D , #FFC371); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to left, #FF5F6D , #FFC371); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #FF5F6D; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FF5F6D , #FFC371); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FF5F6D , #FFC371); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 ```
 
@@ -298,12 +298,34 @@ Gradients are very popular in modern design. Gradients were re-introduced in its
 
 ### Example
 
-1. Color scheme
-2. Gradients
+1. **Color scheme.** I've picked an analogous scheme using purple as a base color. In my process, I first picked one primary color (purple) and explored the color wheel for the matching colors. I will be using purple as the primary action color for all main links and buttons. The two shades of blue complement the overall design, and I am using them on non-actionable elements like headings and overlays.
+2. **Accent Gradient.** I am adding a bright gradient that I will be using as an accent item.
 
-![Step 3 Color](/assets/design-for-programmers/step-3-color.png)
+![edX theme](/assets/design-for-programmers/edx-theme.png)
+
+![edX gradient](/assets/design-for-programmers/edx-gradient.png)
+
+<p class="text__caption">Theme colors and the gradient.</p>
+
+```SASS
+
+$example-scheme: (
+  primary   : #71069E, //HSB 216,64,34
+  secondary : #3B52B8, //HSB 90,33,100
+  terciary  : #00A2D4, //HSB 360,58,100
+  light     : #DDE0F0, //HSB 216,20,60
+  dark      : #5D5F63  //HSB 216,64,20
+);
+```
+
+<p class="text__caption">Theme colors in a Sass map.</p>
+
 
 ## Final Thoughts
-It might not all make sense now… but practice makes perfect. Happy designing!
+Here are the final design and my process.
 
-![That's all folks](/assets/design-for-programmers/design-for-programmers.037.jpeg) 
+1. Overall, I reduced noise on the page. The primary point of attention needs to be on the _Hero_ section with the tagline and the call-to-action. The cacophony of colors distracted from the important elements on the page. The navigation bar is now defined by a simple white line (10% opacity). School logos are in grey color, and take the secondary place in the visual hierarchy. 
+2. I have added a bright gradient accent that can be used throughout the design as part of the branding.
+3. I have switched out the main photo background to an image of the night sky. In my head, it symbolizes ambition and search. Mostly, I've done it because the original image was too obviously a stock photo. People are very sensitive to facial expressions and can tell a fake in a split of a second.
+
+![Step 3 Color](/assets/design-for-programmers/step-3-color.png)
