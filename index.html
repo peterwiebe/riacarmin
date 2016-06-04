@@ -131,8 +131,8 @@ excerpt: I am a product designer. I strive to create great interfaces for people
           {% for post in site.posts %}
           <div class="journal__item"><div class="journal__post">
 
-            {% if post.image %}
-              <img src="http://placehold.it/350x150" alt="">
+            {% if post.hero-image %}
+              <img src="{{post.hero-image}}" alt="">
             {% else %}
               <div class="journal__placeholder">&nbsp;</div>
             {% endif %}

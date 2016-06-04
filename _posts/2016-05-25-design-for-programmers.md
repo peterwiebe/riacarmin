@@ -3,10 +3,11 @@ layout: post
 title: Design for Programmers
 permalink: /:categories/design-for-programmers/
 category: design
-excerpt: Design is a learnable skill. I've summed up a few rules and techniques you can use to build user-friendly and nicer looking interfaces.
+hero-image: /assets/design-for-programmers/og-image.png
+excerpt: "Design is a learnable skill. I've summed up a few rules and techniques you can use to build user-friendly and nicer looking interfaces: grids, typography and color theory."
 ---
 
-Design is not as elusive as people think it is. It is a learnable skill. Design has rules that anyone can apply to their work. If you are an engineer working on an application or a business guy putting together a slide deck, there are a few tricks you can learn.
+Design is not as elusive as people think it is. It is a learnable skill. Design has rules that anyone can apply to their work. If you are an engineer working on an application or a business guy putting together a slide deck, there are a few tricks you can learn. I will show how to apply three base principles of design: grids, typography and color theory.
 
 ## Design Primer
 
@@ -24,18 +25,21 @@ _Disclaimer: I am a product designer, so I will use product design as a referenc
 
 Finally, you need to know **design tools** to design. Design tools span from doodling on a napkin to [Processing](https://p5js.org/) and [D3.js](https://d3js.org/). I can imagine the first thing that comes to your mind is Photoshop, maybe Illustrator. Code also can be a design tool. In fact, many product designers switch to code or use hybrid, GUI/code, tools like [Framer.js](http://framerjs.com/).
 
->That's it. Learn how to use a visual language, figure out who you want to design for and what problem you are solving, and finally, learn a few tools.
-
 -------
 
 ### Example
 I will take a real product and apply the rules of design throughout this article. I have chosen an educational website (because I like education) that offers online courses. _I will not make any structural changes, because it is outside the scope of this post._
 
+>I will apply three base principles of design to the example project: grids, typography and color theory.
+
 My first critique is that the page looks too busy; your eyes don't know where to look. So first, I will completely strip it off all the style and leave just the content.
 
-![Screenshot. Initial design.](/assets/design-for-programmers/initial.png) 
+<div class="portfolio__viewer js-flickity" data-flickity-options='{ "imagesLoaded": true, "percentPosition": false }'>
+  <img src="/assets/design-for-programmers/initial.png" alt="Initial design.">
+  <img src="/assets/design-for-programmers/Initial-no-styles.png" alt="Initial design with no styles.">
+</div>
 
-<p class="text__caption">The initial design.</p>
+<p class="text__caption">The initial design with and without styles.</p>
 
 ## Rule 1. Grids
 
@@ -77,7 +81,7 @@ Now the tricky part, vertical rhythm. Vertical rhythm or baseline grid is a hori
 
 ![Example of baseline grid on the web on Sassline](/assets/design-for-programmers/sassline.png) 
 
-<p class="text__caption">Example of baseline grid on the web from [Sassline](https://sassline.com/).</p>
+<p class="text__caption">Example of baseline grid on the web from <a href="https://sassline.com/" target="_blank">Sassline</a>.</p>
 
 ### Hierarchy
 
@@ -110,7 +114,7 @@ Watch out for the design gang to critique your use of typography. The art of typ
 - **Styles**. Look for a typeface that has versatile styles, a few weights of bold and italic. For example, [Sura](https://www.google.com/fonts#UsePlace:use/Collection:Sura) font doesn't have italics, which might turn out problematic.
 - **Kerning** (spacing between characters). You cannot really fix bad kerning with CSS, so look for fonts that have neat, proportional kerning. See how some letters almost touch each other on [Ecgar](https://www.google.com/fonts/specimen/Eczar). This could decrease readability on smaller font-sizes.
 - **Glyphs**. Check that the font has all the special characters. You probably don't need anything too exotic, but definitely see that the font has a full set of typographic symbols.
-- **Not too gimmicky**. This is more of a feel than a hard rule, but try to stay away from typefaces that has too much character until you feel comfortable with your design choices. [Case in point](https://www.google.com/fonts/specimen/Modak).
+- **Not too gimmicky**. This is more of a feel than a hard rule, but try to stay away from typefaces that have too much character until you feel comfortable with your design choices. [Case in point](https://www.google.com/fonts/specimen/Modak).
 - **Steal**. You don't want to be too original with your typography. Look for inspiration from renowned bloggers and designers. [Typowolf](https://www.typewolf.com/recommendations) posts great examples and recommendation.
 
 <div class="portfolio__viewer js-flickity" data-flickity-options='{ "imagesLoaded": true, "percentPosition": false }'>
@@ -130,7 +134,7 @@ Watch out for the design gang to critique your use of typography. The art of typ
 -----
 
 ### Example
-I have chosen a modern, edgy sans-serif font [Titillium](https://www.google.com/fonts/specimen/Titillium+Web) paired with subtle [Work Sans](https://www.google.com/fonts/specimen/Work+Sans). Both fonts are sans-serifs. Titillium definitely has more character, which makes it a good heading fonts. Work Sans is a high-quality sans serif with a wide variety of styles.
+I have chosen a modern, edgy sans-serif font [Titillium](https://www.google.com/fonts/specimen/Titillium+Web) paired with subtle [Work Sans](https://www.google.com/fonts/specimen/Work+Sans). Both fonts are sans-serifs. Titillium definitely has more character, which makes it a good heading font. Work Sans is a high-quality sans serif with a wide variety of styles.
 
 <img src="/assets/design-for-programmers/font-pairing.png" alt="Step 2 Typography">
 
@@ -165,7 +169,7 @@ Unlike traditional graphic design, colors used on the web and mobile products ar
 
 - Check out [Awwwards](http://www.awwwards.com/) for some distilled color inspiration for UI (keep project orientation in mind)
 - Pantone color of the year, color books, [Pantone nerd blogs](http://tinypmsmatch.tumblr.com/)
-- Take photos of cools stuff, especially industrial design, and analyse with [Adobe Color](color.adobe.com/)
+- Take photos of cools stuff, especially industrial design, and analyze with [Adobe Color](color.adobe.com/)
 
 ### Color schemes
 
@@ -173,8 +177,8 @@ Unlike traditional graphic design, colors used on the web and mobile products ar
 
 Monochromatic schemes are great for base colors for text and supportive elements like borders, backgrounds, shadows, etc.
 
-- You would want to have the darkest color have the brightness ~95% and the darkest ~20%.
-- You never want to have your text be an absolute black or #000. 20% black on a white background is much easier on the eyes, thus easier to read.
+- You would want to have the lightest color have the brightness of ~95% and the darkest ~20%.
+- You never want to have your text be an absolute black or #000. 20% dark grey on a white background is much easier on the eyes, thus easier to read.
 - Try adding a slight blue hue to your greys to achieve a more modern, cold grey colors.
 
 ```Sass
@@ -217,7 +221,7 @@ $analogous-scheme: (
 
 <p class="text__caption"><a href="https://color.adobe.com/Mint-Navy-color-theme-6421656/" target="_blank">Mint Navy</a> on Adobe Color.</p>
 
-**Complementary** schemes use two colors on the opposite sides of the spectrum (think IKEA). As you can imagine, complementary schemes in its pure forms look outdated and aren't as popular anymore.
+**Complementary** schemes use two colors on the opposite sides of the spectrum (_think IKEA_). As you can imagine, complementary schemes in their pure forms look outdated and aren't as popular anymore.
 
 You can try creating a complementary scheme with an interesting twist like the one in [Slack](https://slack.com/) design. You are still going to take two colors that are opposites in their _hue_, but then also make them contrasting in _saturation_ and _brightness_. You can see that Slack is using a  deep, muted aubergine color with bright green.
 
@@ -328,4 +332,10 @@ Here are the final design and my process.
 2. I have added a bright gradient accent that can be used throughout the design as part of the branding.
 3. I have switched out the main photo background to an image of the night sky. In my head, it symbolizes ambition and search. Mostly, I've done it because the original image was too obviously a stock photo. People are very sensitive to facial expressions and can tell a fake in a split of a second.
 
-![Step 3 Color](/assets/design-for-programmers/step-3-color.png)
+
+<div class="portfolio__viewer js-flickity" data-flickity-options='{ "imagesLoaded": true, "percentPosition": false }'>
+  <img src="/assets/design-for-programmers/step-3-color.png" alt="Final design.">
+  <img src="/assets/design-for-programmers/initial.png" alt="Initial design.">
+</div>
+
+<p class="text__caption">Final and initial design.</p>
