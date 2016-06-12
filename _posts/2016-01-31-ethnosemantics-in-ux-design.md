@@ -3,7 +3,7 @@ layout: post
 title:  Ethnosemantics in UX Design
 date:   2015-05-16 21:47:40
 category: research
-permalink: /:categories/:title.html
+permalink: /:categories/:title/
 excerpt: I was inspired by the holistic approach of ethnosemantics and wanted to write an article about it. Information architecture takes the form of navigations, labels, metadata, search algorithms, everything that has words in it, ethnosemantics have a lot to contribute to it.
 ---
 
