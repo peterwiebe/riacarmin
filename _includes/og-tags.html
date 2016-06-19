@@ -1,12 +1,16 @@
 <!-- FACEBOOK -->
-<meta property="og:url" content="{{ page.url }}" />
+<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+{% if page.layout == 'post' or page.layout == 'portfolio' %}
 <meta property="og:type" content="article" />
-<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.description }}{% endif %}" />
+{% else %}
+<meta property="og:type" content="website" />
+{% endif %}
+<meta property="og:title" content="{% if page.title %}{{ page.title }} by Ria Carmin{% else %}{{ site.description }}{% endif %}" />
 <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
 {% if page.hero-image %}
-<meta property="og:image" content="{{ page.hero-image }}" />
+<meta property="og:image" content="{{ site.url }}{{ page.hero-image }}" />
 {% else %}
-<meta property="og:image" content="/assets/og-image.png" />
+<meta property="og:image" content="{{ site.url }}/assets/og-image.png" />
 {% endif %}
 
 
