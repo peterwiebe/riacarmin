@@ -169,7 +169,7 @@ Unlike traditional graphic design, colors used on the web and mobile products ar
 
 - Check out [Awwwards](http://www.awwwards.com/) for some distilled color inspiration for UI (keep project orientation in mind)
 - Pantone color of the year, color books, [Pantone nerd blogs](http://tinypmsmatch.tumblr.com/)
-- Take photos of cool stuff, especially industrial design, and analyze with [Adobe Color](color.adobe.com/)
+- Take photos of cool stuff, especially industrial design, and analyze with [Adobe Color](https://color.adobe.com/)
 
 ### Color schemes
 
