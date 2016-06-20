@@ -80,30 +80,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <main class="portfolio__main mobile-container">
   <aside class="portfolio__aside">
-    <p class="portfolio__label">Project</p>
-    <h1 class="portfolio__title">Sweeble</h1>
-    <p class="portfolio__description">Experimenting with a non-binary “like” action</p>
-    
-      <a class="portfolio__active-url"href="http://sweebleapp.com" target="_blank">sweebleapp.com</a>
-    
-    <ul class="portfolio__tags">
+    <div class="sticky portfolio__sticky">
+      <p class="portfolio__label">Project</p>
+      <h1 class="portfolio__title">Sweeble</h1>
+      <p class="portfolio__description">Experimenting with a non-binary “like” action</p>
       
-        <li class="portfolio__tag">Interviews</li>
+        <a class="portfolio__active-url"href="http://sweebleapp.com" target="_blank">sweebleapp.com</a>
       
-        <li class="portfolio__tag">Mental Model</li>
-      
-        <li class="portfolio__tag">Task Flows</li>
-      
-        <li class="portfolio__tag">Rapid Prototyping</li>
-      
-        <li class="portfolio__tag">High Fidelity Mocks</li>
-      
-        <li class="portfolio__tag">iOS app</li>
-      
-        <li class="portfolio__tag">Android app</li>
-      
-    </ul>
-    <a href="javascript:history.back(1)" class="button button__outline button__outline--default portfolio__back-button">back</a>
+      <ul class="portfolio__tags">
+        
+          <li class="portfolio__tag">Interviews</li>
+        
+          <li class="portfolio__tag">Mental Model</li>
+        
+          <li class="portfolio__tag">Task Flows</li>
+        
+          <li class="portfolio__tag">Rapid Prototyping</li>
+        
+          <li class="portfolio__tag">High Fidelity Mocks</li>
+        
+          <li class="portfolio__tag">iOS app</li>
+        
+          <li class="portfolio__tag">Android app</li>
+        
+      </ul>
+      <a href="javascript:history.back(1)" class="button button__outline button__outline--default portfolio__back-button">back</a>
+    </div>
   </aside>
   <article class="portfolio__content">
     <p>Sweeble is an Android and iOS application that has introduced an alternative to a traditional binary “like” or “not-like”. Sweeble has experimented with an idea of “like intensity”, allowing users to express which content they like the most.</p>
@@ -174,8 +176,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="/javascripts/vendor/flickity.pkgd.min.js"></script>
 <script src="/javascripts/vendor/jquery.smooth-scroll.js"></script>
 <script src="/javascripts/vendor/animsition.min.js"></script>
+
+<script src="/javascripts/vendor/jquery.waypoints.min.js"></script>
+<script src="/javascripts/vendor/shortcuts/sticky.min.js"></script>
+
 <script src="/javascripts/plugins.js"></script>
 <script src="/javascripts/main.js"></script>
+<script src="/javascripts/post.js"></script>
 
 
 
