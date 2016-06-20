@@ -1,0 +1,13 @@
+// Waypoints Sticky Elements
+//
+// http://imakewebthings.com/waypoints/shortcuts/sticky-elements/
+// ----------------------------------------------
+
+.sticky-wrapper {
+  position: relative;
+}
+
+.stuck {
+  position:fixed;
+  top:1em;
+}

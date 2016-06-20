@@ -80,26 +80,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <main class="portfolio__main mobile-container">
   <aside class="portfolio__aside">
-    <p class="portfolio__label">Project</p>
-    <h1 class="portfolio__title">Beauty Sphere</h1>
-    <p class="portfolio__description">Empowering women to make informed choices in skin care</p>
-    
-      <a class="portfolio__active-url"href="http://" target="_blank"></a>
-    
-    <ul class="portfolio__tags">
+    <div class="sticky portfolio__sticky">
+      <p class="portfolio__label">Project</p>
+      <h1 class="portfolio__title">Beauty Sphere</h1>
+      <p class="portfolio__description">Empowering women to make informed choices in skin care</p>
       
-        <li class="portfolio__tag">Mental Model</li>
+        <a class="portfolio__active-url"href="http://" target="_blank"></a>
       
-        <li class="portfolio__tag">Site Map</li>
-      
-        <li class="portfolio__tag">Task Flows</li>
-      
-        <li class="portfolio__tag">Wireframes</li>
-      
-        <li class="portfolio__tag">Style Guide</li>
-      
-    </ul>
-    <a href="javascript:history.back(1)" class="button button__outline button__outline--default portfolio__back-button">back</a>
+      <ul class="portfolio__tags">
+        
+          <li class="portfolio__tag">Mental Model</li>
+        
+          <li class="portfolio__tag">Site Map</li>
+        
+          <li class="portfolio__tag">Task Flows</li>
+        
+          <li class="portfolio__tag">Wireframes</li>
+        
+          <li class="portfolio__tag">Style Guide</li>
+        
+      </ul>
+      <a href="javascript:history.back(1)" class="button button__outline button__outline--default portfolio__back-button">back</a>
+    </div>
   </aside>
   <article class="portfolio__content">
     <p><img src="/assets/beautysphere/display-and-macbook.png" alt="BeautySphere allows women to make informed choices in skin care" /></p>
@@ -161,8 +163,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="/javascripts/vendor/flickity.pkgd.min.js"></script>
 <script src="/javascripts/vendor/jquery.smooth-scroll.js"></script>
 <script src="/javascripts/vendor/animsition.min.js"></script>
+
+<script src="/javascripts/vendor/jquery.waypoints.min.js"></script>
+<script src="/javascripts/vendor/shortcuts/sticky.min.js"></script>
+
 <script src="/javascripts/plugins.js"></script>
 <script src="/javascripts/main.js"></script>
+<script src="/javascripts/post.js"></script>
 
 
 

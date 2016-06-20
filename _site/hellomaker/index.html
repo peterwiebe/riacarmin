@@ -80,24 +80,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <main class="portfolio__main mobile-container">
   <aside class="portfolio__aside">
-    <p class="portfolio__label">Project</p>
-    <h1 class="portfolio__title">HelloMaker</h1>
-    <p class="portfolio__description">learning community of passionate designers and developers</p>
-    
-      <a class="portfolio__active-url"href="http://hellomaker.camp" target="_blank">hellomaker.camp</a>
-    
-    <ul class="portfolio__tags">
+    <div class="sticky portfolio__sticky">
+      <p class="portfolio__label">Project</p>
+      <h1 class="portfolio__title">HelloMaker</h1>
+      <p class="portfolio__description">learning community of passionate designers and developers</p>
       
-        <li class="portfolio__tag">Landing Page</li>
+        <a class="portfolio__active-url"href="http://hellomaker.camp" target="_blank">hellomaker.camp</a>
       
-        <li class="portfolio__tag">Meteor.js App</li>
-      
-        <li class="portfolio__tag">Teaching</li>
-      
-        <li class="portfolio__tag">Mentoring</li>
-      
-    </ul>
-    <a href="javascript:history.back(1)" class="button button__outline button__outline--default portfolio__back-button">back</a>
+      <ul class="portfolio__tags">
+        
+          <li class="portfolio__tag">Landing Page</li>
+        
+          <li class="portfolio__tag">Meteor.js App</li>
+        
+          <li class="portfolio__tag">Teaching</li>
+        
+          <li class="portfolio__tag">Mentoring</li>
+        
+      </ul>
+      <a href="javascript:history.back(1)" class="button button__outline button__outline--default portfolio__back-button">back</a>
+    </div>
   </aside>
   <article class="portfolio__content">
     <p><img src="http://loveux.co/assets/hellomaker/colors.png" alt="Color scheme." /></p>
@@ -143,8 +145,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="/javascripts/vendor/flickity.pkgd.min.js"></script>
 <script src="/javascripts/vendor/jquery.smooth-scroll.js"></script>
 <script src="/javascripts/vendor/animsition.min.js"></script>
+
+<script src="/javascripts/vendor/jquery.waypoints.min.js"></script>
+<script src="/javascripts/vendor/shortcuts/sticky.min.js"></script>
+
 <script src="/javascripts/plugins.js"></script>
 <script src="/javascripts/main.js"></script>
+<script src="/javascripts/post.js"></script>
 
 
 

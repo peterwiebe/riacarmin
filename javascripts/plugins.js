@@ -31,7 +31,7 @@
         loading: true,
         loadingParentElement: 'body', //animsition wrapper element
         loadingClass: 'animsition-loading',
-        loadingInner: '<img src="/assets/loader.svg" alt="loading…">',
+        // loadingInner: '<img src="/assets/loader.svg" alt="loading…">',
         timeout: false,
         timeoutCountdown: 5000,
         onLoadEvent: true,

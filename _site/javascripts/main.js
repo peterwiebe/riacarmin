@@ -72,7 +72,7 @@
     }
 
     function resize() {
-        if (screen.width < 599) {
+        if ($(window).width() < 599) {
             width = window.innerWidth;
         }
         else {
