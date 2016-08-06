@@ -58,9 +58,10 @@
     padding: 0 1em 0 0;
     border-right: $base-border;
     border-bottom: $base-border;
-    img {
-      min-height: 150px;
-    }
+    // I can't remember what this was for
+    // img {
+    //   min-height: 150px;
+    // }
   }
   &__tag {
     display: inline-block;

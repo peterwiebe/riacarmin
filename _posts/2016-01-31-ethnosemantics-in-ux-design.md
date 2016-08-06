@@ -5,6 +5,7 @@ date:   2015-05-16 21:47:40
 category: research
 permalink: /:categories/:title/
 excerpt: I was inspired by the holistic approach of ethnosemantics to researching the use of language among cultural groups. I have adapted some of its methods for modern user research and wanted to share my ideas about it.
+medium: 'https://blog.prototypr.io/ethnosemantics-in-ux-design-1e0539f9b5e#.vvouzoswi'
 ---
 ## Why do we care about Ethnosemantics?
 

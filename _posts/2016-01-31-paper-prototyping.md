@@ -4,6 +4,7 @@ title: Paper Prototyping
 permalink: /:categories/paper-prototyping/
 category: design
 excerpt: I will try to convince you to get hands-on with paper and pen in today's abundance of digital tools.
+medium:
 ---
 Paper prototyping is such a great way to flush out ideas and engage the entire team, designers and non-designers. It is fast and collaborative, but most importantly accessible for everyone on the team. We have such great digital tools today like inVision and Proto.io, but there is always a place for good old sketching and doodling.
 There are a lot of good articles and books out there on paper prototyping (see links below). I will outline my process and some tips.

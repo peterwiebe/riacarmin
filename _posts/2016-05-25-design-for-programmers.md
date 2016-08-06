@@ -5,6 +5,7 @@ permalink: /:categories/design-for-programmers/
 category: design
 hero-image: /assets/design-for-programmers/og-image.png
 excerpt: "Design is a learnable skill. I've summed up a few rules and techniques you can use to build user-friendly and nicer looking interfaces: grids, typography and color theory."
+medium: 'https://blog.prototypr.io/design-for-programmers-d38c56982cd0'
 ---
 
 Design is not as elusive as people think it is. It is a learnable skill. Design has rules that anyone can apply to their work. If you are an engineer working on an application or a business guy putting together a slide deck, there are a few tricks you can learn. I will show how to apply three base principles of design: grids, typography and color theory.
