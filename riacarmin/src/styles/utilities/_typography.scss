@@ -1,0 +1,13 @@
+// ==========================================================================
+// TYPOGRAPHY
+// ==========================================================================
+
+@mixin heading ($color) {
+  font-family: $heading-font-family;
+  font-size: $base-font-size;
+  font-weight: $font-weight-bold;
+  line-height: $heading-line-height;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: $color;
+}

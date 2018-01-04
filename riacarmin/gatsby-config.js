@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Ria Carmin | Front-End Engineer & Product Designer`,
     siteUrl: `http://www.riacarmin.com`
   },
   plugins: [
@@ -18,8 +18,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "GatsbyJS",
-        short_name: "GatsbyJS",
+        name: "Ria Carmin | Front-End Engineer & Product Designer",
+        short_name: "Ria Carmin",
         start_url: "/",
         background_color: "#f7f0eb",
         theme_color: "#a2466c",

@@ -1,0 +1,15 @@
+@import "../../styles/base/variables";
+@import "../../styles/utilities/helpers";
+
+.interests {
+  max-width: $container-width;
+  padding: $container-padding;
+  min-height: $container-width/2;
+  @include vertical-align;
+
+  &__lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

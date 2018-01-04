@@ -1,0 +1,29 @@
+@import "../../styles/utilities/helpers";
+@import "../../styles/base/variables";
+
+.name {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1em 0;
+  @include vertical-align;
+  @media screen and (min-width: $medium-screen) {
+    height: 100%;
+  }
+
+  &__name {
+    text-transform: capitalize;
+    letter-spacing: 0;
+    font-size: 3em;
+    margin-bottom: 0;
+    color: $color-secondary;
+  }
+  &__title {
+    color: $color-dark;
+    font-size: 1.25em;
+    font-weight: 400;
+    font-family: $base-font-family;
+    @media screen and (min-width: $medium-screen) {
+      margin-bottom: 4rem;
+    }
+  }
+}

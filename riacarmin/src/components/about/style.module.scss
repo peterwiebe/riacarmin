@@ -1,0 +1,24 @@
+@import "../../styles/base/variables";
+
+.about {
+  color: $white;
+
+  &__inner {
+    z-index: 10;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__title {
+    color: transparentize(#fff, 0.65);
+    @media screen and (min-width: $medium-screen) {
+      font-size: 13em;
+      text-transform: capitalize;
+      opacity: 0.28;
+      margin-bottom: 0;
+    }
+  }
+}

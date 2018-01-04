@@ -1,0 +1,47 @@
+// ==========================================================================
+// HELPERS
+// ==========================================================================
+
+// Vertically align anything
+@mixin vertical-align() {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+// Embed responsive videos
+// Modified http://embedresponsively.com/
+@mixin responsive-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  & iframe,
+  & object,
+  & embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// Generate modifier text color classes
+@mixin text-colors($map) {
+  @each $theme, $color in $map {
+    &--#{$theme} {
+      color: $color;
+    }
+  }
+}
+
+// Clearfix
+@mixin clearfix {
+  &::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}
