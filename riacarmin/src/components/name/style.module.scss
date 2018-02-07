@@ -2,12 +2,15 @@
 @import "../../styles/base/variables";
 
 .name {
+  height: 100%;
   width: 100%;
   margin: 0 auto;
   padding: 1em 0;
+  position: relative;
+  z-index: 20;
   @include vertical-align;
   @media screen and (min-width: $medium-screen) {
-    height: 100%;
+    padding-left: 4rem;
   }
 
   &__name {
@@ -16,6 +19,7 @@
     font-size: 3em;
     margin-bottom: 0;
     color: $color-secondary;
+
   }
   &__title {
     color: $color-dark;
@@ -24,6 +28,7 @@
     font-family: $base-font-family;
     @media screen and (min-width: $medium-screen) {
       margin-bottom: 4rem;
+      padding-left: 2rem;
     }
   }
 }
