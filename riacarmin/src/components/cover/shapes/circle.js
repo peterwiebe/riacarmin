@@ -1,13 +1,12 @@
 export default class Circle {
-  constructor(x, y, rad, canvas, ctx) {
+  constructor(x, y, ctx) {
     this.x = x;
     this.y = y;
     this.speed = 1;
     this.dx = (Math.random() + -0.5);
     this.dy = (Math.random() + -0.5);
-    this.rad = rad;
+    this.rad = 1 + Math.random() * 10;
     this.alpha = .8;
-    this.canvas = canvas;
     this.ctx = ctx;
   }
   init() {

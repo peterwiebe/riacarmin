@@ -2,8 +2,8 @@
 @import "../../styles/base/variables";
 
 .cover {
+  height: 100%;
   @media screen and (min-width: $medium-screen) {
-    height: 100%;
   }
 
   &__leftColumn,
@@ -12,10 +12,10 @@
     @include clearfix;
     overflow: hidden;
     position: relative;
+    height: 100%;
     @media screen and (min-width: $medium-screen) {
       display: inline-block;
       width: 50%;
-      height: 100%;
       vertical-align: top;
     }
   }

@@ -2,12 +2,6 @@ import { bind } from 'decko';
 import Circle from './shapes/circle';
 import Stick from './shapes/stick';
 
-// TODO: Move to class 
-function addEventListeners() {
-  window.addEventListener('resize', () => console.log('I am a different window now'));
-  window.addEventListener('scroll', () => console.log('Not lookling any more'));
-}
-
 export default class Animation {
   constructor(parent, canvas) {
     this.isAnimated = true;
@@ -48,11 +42,11 @@ export default class Animation {
   generateCircles() {
     for (var x = 0; x < 480; x++) {
       setTimeout(() => {
-        // const circle = new Circle(this.center.x, this.center.y, 10+Math.random()*10, this.canvas, this.ctx);
-        const stick = new Stick(this.center.x, this.center.y, this.canvas, this.ctx);
-        // circle.init();
+        const circle = new Circle(this.center.x, this.center.y, this.ctx);
+        const stick = new Stick(this.center.x, this.center.y, this.ctx);
+        circle.init();
         stick.init();
-        // this.circles.push(circle);
+        this.circles.push(circle);
         this.sticks.push(stick);
       }, x * Math.random() * 1600);
     }
@@ -64,8 +58,10 @@ export default class Animation {
     requestAnimationFrame(this.initAnimation);
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
     for (let i = 0; i < this.sticks.length; i++) {
-      // this.circles[i].draw();
       this.sticks[i].draw();
+    }
+    for (let i = 0; i < this.circles.length; i++) {
+      this.circles[i].draw();
     }
   }
 

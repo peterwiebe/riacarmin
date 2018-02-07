@@ -1,12 +1,11 @@
 export default class Stick {
-  constructor(x, y, canvas, ctx) {
+  constructor(x, y, ctx) {
     this.x = x;
     this.y = y;
     this.speed = 1;
     this.dx = (Math.random() + -0.5);
     this.dy = (Math.random() + -0.5);
     this.alpha = .8;
-    this.canvas = canvas;
     this.ctx = ctx;
   }
 
