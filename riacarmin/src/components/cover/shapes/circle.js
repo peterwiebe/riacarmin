@@ -11,7 +11,7 @@ export default class Circle {
   }
   init() {
     this.ctx.beginPath();
-    this.ctx.strokeStyle = `rgba(0, 170, 183, ${this.alpha})`;
+    this.ctx.strokeStyle = `rgba(0, 155, 183, ${this.alpha})`;
     this.ctx.arc(this.x, this.y, this.rad, 0, Math.PI * 2, false);
     this.ctx.stroke();
   }

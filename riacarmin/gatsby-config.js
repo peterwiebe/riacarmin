@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Ria Carmin | Front-End Engineer & Product Designer`,
+    title: `Ria Carmin | Interface Engineer`,
     siteUrl: `http://www.riacarmin.com`
   },
   plugins: [
@@ -18,11 +18,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "Ria Carmin | Front-End Engineer & Product Designer",
+        name: "Ria Carmin | Interface Engineer",
         short_name: "Ria Carmin",
         start_url: "/",
-        background_color: "#f7f0eb",
-        theme_color: "#a2466c",
+        background_color: "#ffd2d5",
+        theme_color: "#2e3c99",
         display: "minimal-ui",
         icons: [
           {
@@ -57,8 +57,8 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: `rocybtov1ozk`,
-        accessToken: `6f35edf0db39085e9b9c19bd92943e4519c77e72c852d961968665f1324bfc94`
+        spaceId: `mjjc4cn5846z`,
+        accessToken: `91f62d9ecbd1670cfe489be0317d0ecd7abae768494a364aea3894323d6630d0`
       }
     },
     `gatsby-transformer-remark`

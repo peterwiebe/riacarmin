@@ -1,31 +1,36 @@
 import React from "react";
 import style from "./style.module.scss";
-
+import * as PropTypes from "prop-types"
 import Navigation from "../navigation";
 
-function About() {
-  return (
-    <section className={`${style.about} ${style.about__inner}`}>
-      <p>
-        I am a <strong>product designer</strong> and a{" "}
-        <strong>JavaScript developer</strong>. I strive to create great
-        interfaces <strong>for people</strong>, on any screen or device. Design
-        is a collaborative process. I start with user-centered{" "}
-        <strong>research</strong> and get stakeholders on the same page through
-        design thinking. I bring the research to life through{" "}
-        <strong>wireframing</strong>, <strong>prototyping</strong> and{" "}
-        <strong>testing</strong>, and finally polished <strong>visuals</strong>.
-      </p>
-      <p>
-        I write <strong>code</strong> so I can control the final design. I have
-        developed and keep improving a boilerplate to create custom{" "}
-        <strong>UI frameworks</strong>. There is nothing better than clean and
-        scalable code behind the style.
-      </p>
+const propTypes = {
+  data: PropTypes.object.isRequired,
+}
 
-      <Navigation />
-    </section>
-  );
+class About extends React.Component {
+  render() {
+    const about = this.props.data.allContentfulAbout.node.body.body;
+    return (
+      <section className={`${style.about} ${style.about__inner}`}>
+        {console.log(props)}
+        <Navigation />
+      </section>
+    );
+  }
 }
 
 export default About;
+
+export const aboutQuery = graphql`
+  query AboutQuery {
+    allContentfulAbout {
+      edges {
+        node {
+          body {
+            body
+          }
+        }
+      }
+    }
+  }
+`
