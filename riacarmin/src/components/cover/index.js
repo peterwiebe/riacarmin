@@ -49,7 +49,10 @@ class Cover extends React.Component {
         </div>
 
         <div className={style.cover__rightColumn}>
-          <About />
+          <About
+            about={this.props.data.about}
+            navigation={this.props.data.navigation}
+          />
           <div
             className={`${style.cover__skewed} ${
               style.cover__skewed__right__1

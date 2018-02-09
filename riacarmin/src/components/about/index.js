@@ -4,21 +4,15 @@ import * as PropTypes from "prop-types";
 import Navigation from "../navigation";
 
 const propTypes = {
-  data: PropTypes.object.isRequired
+  about: PropTypes.string.isRequired,
+  navigation: PropTypes.array.isRequired
 };
 
-class About extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    return (
-      <section className={`${style.about} ${style.about__inner}`}>
-        {console.log(this.props)}
-        <Navigation />
-      </section>
-    );
-  }
-}
+const About = ({ about, navigation }) => (
+  <section className={`${style.about} ${style.about__inner}`}>
+    <article dangerouslySetInnerHTML={{ __html: about }} />
+    <Navigation navigation={navigation} />
+  </section>
+);
 
 export default About;

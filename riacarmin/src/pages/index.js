@@ -6,20 +6,36 @@ import Cover from "../components/cover";
 const IndexPage = ({ data }) => (
   <main className="view">
     {console.log(data)}
-    <Cover />
+    <Cover
+      data={{
+        about: data.allContentfulAbout.edges[0].node.body.childMarkdownRemark.html,
+        navigation: data.allContentfulLinks.edges
+      }}
+    />
   </main>
 );
 
 export default IndexPage;
 
 export const indexPageQuery = graphql`
-  query AboutQuery {
+  query indexPageQuery {
     allContentfulAbout {
       edges {
         node {
           body {
-            body
+            childMarkdownRemark {
+              html
+            }
           }
+        }
+      }
+    }
+    allContentfulLinks {
+      edges {
+        node {
+          id
+          display
+          url
         }
       }
     }
