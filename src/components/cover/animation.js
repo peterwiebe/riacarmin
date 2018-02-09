@@ -15,13 +15,9 @@ export default class Animation {
 
   addEventListeners() {
     window.addEventListener('resize', () => {
-      console.log('I am a different window now')
       this.initCanvas();
-      console.log(this.canvas.width);
     });
     window.addEventListener('scroll', () => {
-      console.log('Not looking any more')
-      console.log(this.isAnimated);
       this.scrollCheck()
     });
   }

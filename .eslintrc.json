@@ -19,12 +19,27 @@
     },
     "sourceType": "module"
   },
-  "plugins": ["react", "jsx-a11y"],
+  "plugins": [
+    "react",
+    "jsx-a11y"
+  ],
   "rules": {
-    "indent": ["error", 2],
-    "linebreak-style": ["error", "unix"],
-    "quotes": ["error", "single"],
-    "semi": ["error", "always"],
+    "indent": [
+      "error",
+      2
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
     "react/jsx-uses-vars": "error",
     "react/jsx-boolean-value": "error"
   },
@@ -34,6 +49,8 @@
       "pragma": "React",
       "version": "15.0"
     },
-    "propWrapperFunctions": ["forbidExtraProps"]
+    "propWrapperFunctions": [
+      "forbidExtraProps"
+    ]
   }
 }

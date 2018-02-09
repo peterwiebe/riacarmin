@@ -12,8 +12,6 @@ class Cover extends React.Component {
     super(props);
   }
   componentDidMount() {
-    console.log(this.coverSection.offsetWidth);
-    console.log(this.coverSection.offsetHeight);
     const animate = new Animation(this.coverSection, this.coverCanvas);
     animate.cover();
   }

@@ -5,7 +5,6 @@ import Cover from "../components/cover";
 
 const IndexPage = ({ data }) => (
   <main className="view">
-    {console.log(data)}
     <Cover
       data={{
         about: data.allContentfulAbout.edges[0].node.body.childMarkdownRemark.html,
