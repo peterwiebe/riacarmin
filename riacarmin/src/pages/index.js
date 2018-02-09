@@ -1,19 +1,27 @@
 import React from "react";
 import Link from "gatsby-link";
-import { Helmet } from "react-helmet";
-
 
 import Cover from "../components/cover";
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <main className="view">
-    <Helmet>
-      <meta charSet="utf-8" />
-      <title>Ria Carmin | Interface Engineer</title>
-      <link rel="canonical" href="http://www.riacarmin.com" />
-    </Helmet>
+    {console.log(data)}
     <Cover />
   </main>
 );
 
 export default IndexPage;
+
+export const indexPageQuery = graphql`
+  query AboutQuery {
+    allContentfulAbout {
+      edges {
+        node {
+          body {
+            body
+          }
+        }
+      }
+    }
+  }
+`;

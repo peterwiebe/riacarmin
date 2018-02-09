@@ -8,11 +8,12 @@ import "../styles/styles.scss";
 const TemplateWrapper = ({ children }) => (
   <div className="view">
     <Helmet
-      title="Gatsby Default Starter"
+      title="Ria Carmin | Interface Engineer"
       meta={[
         { name: "description", content: "Sample" },
         { name: "keywords", content: "sample, something" }
       ]}
+      link={[{ rel: "canonical", href: "http://www.riacarmin.com" }]}
     />
     {children()}
   </div>
