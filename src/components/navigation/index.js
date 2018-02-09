@@ -5,7 +5,7 @@ const Navigation = ({ navigation }) => (
   <ul className={style.navigation}>
     {navigation.map(({ node }) => (
       <li className={style.navigation__item} key={node.id}>
-        <a href={node.url}>{node.display}</a>
+        <a href={node.url} target="_blank">{node.display}</a>
       </li>
     ))}
   </ul>
