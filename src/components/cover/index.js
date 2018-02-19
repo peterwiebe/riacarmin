@@ -17,8 +17,13 @@ class Cover extends React.Component {
   }
   render() {
     return (
-      <section className={style.cover}>
-        <div className={style.cover__leftColumn}
+      <section
+        className={style.cover}
+        style={{
+          height: `${window.innerHeight}px`
+        }}>
+        <div
+          className={style.cover__leftColumn}
           ref={el => {
             this.coverSection = el;
           }}

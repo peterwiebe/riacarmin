@@ -49,14 +49,14 @@
     &__left__2 {
       right: 4px;
       transform: rotate(5deg);
-      background-color: lighten(map-get($accent-colors, light), 5%);;
+      background-color: lighten($fringy, 35%);
       bottom: -6.25em;
     }
 
     &__right__2 {
       left: 4px;
       transform: rotate(-5deg);
-      background-color: darken(map-get($accent-colors, secondary), 6%);;
+      background-color: lighten($fringy, 35%);
       bottom: -6.25em;
     }
   }

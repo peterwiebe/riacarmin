@@ -1,0 +1,112 @@
+@import "../../styles/base/variables";
+@import "../../styles/utilities/helpers";
+
+.projects {
+  $gradient-end: lighten($fringy, 5%);
+  $gradient-start: lighten($fringy, 35%);
+
+  position: relative;
+  min-height: $container-width/2;
+  padding-bottom: 20rem;
+  background: $gradient-start;
+  background: -webkit-linear-gradient(to bottom, $gradient-start, $gradient-end);
+  background: linear-gradient(to bottom, $gradient-start, $gradient-end);
+  &__inner {
+    margin: 0 auto;
+    max-width: $container-width;
+    padding: $container-padding;
+    padding-top: 6rem;
+  }
+  &__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(14rem, auto));
+      grid-gap: 2rem;
+      grid-auto-rows: 22rem;
+  }
+  &__card {
+    @include clearfix;
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border: 1px solid $fringy;
+
+    &__icon {
+      height: 2.25rem;
+      width: 2.25rem !important;
+      padding: .5rem;
+      position: absolute;
+      top: -1rem;
+      right: 1rem;
+      color: white;
+      display: inline-block;
+      border-radius: 50%;
+      background-color: $blue;
+    }
+    &__image {
+      position: absolute;
+      width: 100%;
+      bottom: -1rem;
+      left: -1rem;
+      z-index: 0;
+    }
+    &__title {
+      color: $blue;
+      font-family: $heading-font-family;
+      text-transform: uppercase;
+    }
+  }
+  &__code {
+    &__tag {
+    }
+  }
+  &__design {
+    &__tag {
+    }
+
+  }
+
+}
+
+.square {
+  $color: $fringy;
+
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  stroke-linejoin: round;
+  stroke-miterlimit: 1.41421;
+  position: absolute;
+  // animation: bounce 4s alternate infinite, spin 14s infinite;
+
+
+  &__path__1 {
+    fill: lighten($color, 10%);
+  }
+  &__path__2 {
+    fill: lighten($color, 20%);
+  }
+  &__gradient__start {
+    stop-color: lighten($color, 5%);
+  }
+  &__gradient__end {
+    stop-color: lighten($color, 15%);
+  }
+}
+
+@keyframes bounce {
+  from {
+    bottom: -1rem;
+  }
+  to {
+    bottom: 2rem;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
