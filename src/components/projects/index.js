@@ -6,7 +6,7 @@ import { faMediumM, faGithub } from '@fortawesome/fontawesome-free-brands';
 import Square from "./square";
 
 const Card = ({ project }) => (
-  <a className={style.projects__card} target="_blank" href="https://github.com/">
+  <a className={style.projects__card} target="_blank" href={project.node.url}>
     <article>
       {project.node.icon === 'github'
         ? (<FontAwesomeIcon icon={faGithub} className={style.projects__card__icon__github} />)

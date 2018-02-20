@@ -47,6 +47,7 @@ export const indexPageQuery = graphql`
         node {
           id
           title
+          url
           description {
             description
           }

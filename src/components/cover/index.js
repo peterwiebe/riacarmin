@@ -16,8 +16,10 @@ class Cover extends React.Component {
     animate.cover();
   }
   render() {
-    // const height = window.innerWidth > 600 ? `${window.innerHeight}px` : `auto`;
-    const height = `${window.innerHeight}px`;
+    let height;
+    if (typeof window !== `undefined`) {
+      height = `${window.innerHeight}px`;
+    }
     return (
       <section
         className={style.cover}
