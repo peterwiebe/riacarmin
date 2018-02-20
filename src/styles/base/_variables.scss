@@ -17,7 +17,7 @@ $base-line-height: 1.5;
 $heading-line-height: 1.2;
 
 // Layout
-$container-width: 86rem;
+$container-width: 74rem;
 $container-padding: 0 2rem;
 
 // Breakpoints
@@ -35,19 +35,15 @@ $base-z-index: 0;
 
 // Theme Colors
 $white: transparentize(white, 0.2);
-$robin: #8fcccc;
-$wine: #5b4653;
-$mustard: #ddc045;
-$purp: #4717f6;
-$storm: #473f4c;
-$cloud: #a090ad;
 
-$red: #ff0000;
+
+$storm: #473f4c;
+$red: #ff004c;
 $blue: #2e3c99;
 $yellow: #ffbd47;
 $cosmos: #ffd2d5;
 $lace: #ffbdff;
-$fringy: #b9e3d0;
+$fringy: #78C9CD;
 
 $accent-colors: (
   primary : $red,
@@ -66,8 +62,8 @@ $mandy: #e67478;
 $apricot: #ed8864;
 $eastside: #9279c3;
 $ui-colors: (
-  default : $robin,
-  success : $robin,
+  default : $blue,
+  success : $vista,
   error : $mandy,
   warning : $apricot,
   info : $eastside

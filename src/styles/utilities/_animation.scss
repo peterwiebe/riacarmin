@@ -1,0 +1,25 @@
+.square {
+  @for $i from 1 through 10 {
+    &__animation__#{$i} {
+      animation: spin-#{$i} $i*2+28s infinite, bounce-#{$i} $i*2+4s alternate infinite;    }
+  }
+}
+
+@for $i from 1 through 10 {
+@keyframes bounce-#{$i} {
+  from {
+    bottom: $i + 1rem;
+  }
+  to {
+    bottom: $i + 5rem;
+  }
+}
+@keyframes spin-#{$i} {
+  from {
+    transform: rotate(10deg * $i);
+  }
+  to {
+    transform: rotate(10deg * $i + 360deg);
+  }
+}
+}

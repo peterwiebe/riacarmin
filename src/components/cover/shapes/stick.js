@@ -15,7 +15,7 @@ export default class Stick {
     this.ctx.beginPath();
     this.ctx.translate(this.x, this.y);
     this.ctx.rotate(this.rotation);
-    this.ctx.fillStyle = `rgba(220, 10, 83, ${this.alpha})`;
+    this.ctx.fillStyle = `rgba(255, 0, 76, ${this.alpha})`;
     this.ctx.fillRect(-4, -12, 8, 24);
     this.ctx.restore();
 

@@ -2,6 +2,7 @@ import React from "react";
 import Link from "gatsby-link";
 
 import Cover from "../components/cover";
+import Projects from '../components/projects';
 
 const IndexPage = ({ data }) => (
   <main className="view">
@@ -11,6 +12,9 @@ const IndexPage = ({ data }) => (
         navigation: data.allContentfulLinks.edges
       }}
     />
+    <Projects data={{
+      projects: data.allContentfulProject.edges
+    }} />
   </main>
 );
 
@@ -35,6 +39,24 @@ export const indexPageQuery = graphql`
           id
           display
           url
+        }
+      }
+    }
+    allContentfulProject {
+      edges {
+        node {
+          id
+          title
+          url
+          description {
+            description
+          }
+          cover {
+            resize(width: 260, height:260, resizingBehavior: SCALE) {
+              src
+            }
+          }
+          icon
         }
       }
     }
