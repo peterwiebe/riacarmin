@@ -7,10 +7,13 @@
 
   position: relative;
   min-height: $container-width/2;
-  padding-bottom: 20rem;
+  padding-bottom: 2rem;
   background: $gradient-start;
   background: -webkit-linear-gradient(to bottom, $gradient-start, $gradient-end);
   background: linear-gradient(to bottom, $gradient-start, $gradient-end);
+  @media screen and (min-width: $container-width) {
+    padding-bottom: 20rem;
+  }
   &__inner {
     margin: 0 auto;
     max-width: $container-width;
@@ -94,7 +97,9 @@
   stroke-linejoin: round;
   stroke-miterlimit: 1.41421;
   position: absolute;
-
+  @media screen and (max-width: $container-width) {
+    display: none;
+  }
   &__path__1 {
     fill: lighten($color, 10%);
   }
