@@ -1,14 +1,17 @@
 import React from "react";
 import style from "./style.module.scss";
-import FontAwesomeIcon from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/fontawesome-free-solid'
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import { faMediumM, faGithub } from '@fortawesome/fontawesome-free-brands';
 
 import Square from "./square";
 
 const Card = ({ project }) => (
   <a className={style.projects__card} target="_blank" href="https://github.com/">
     <article>
-      <FontAwesomeIcon icon={faCoffee} className={style.projects__card__icon} />
+      {project.node.icon === 'github'
+        ? (<FontAwesomeIcon icon={faGithub} className={style.projects__card__icon__github} />)
+        : (<FontAwesomeIcon icon={faMediumM} className={style.projects__card__icon__medium} />)
+      }
       <h3 className={style.projects__card__title}>{project.node.title}</h3>
       {project.node.cover
         ? (<img src={`https://${project.node.cover.resize.src}`} className={style.projects__card__image} />)

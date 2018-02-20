@@ -2,11 +2,9 @@
 @import "../../styles/base/variables";
 
 .cover {
-  height: 100%;
 
   &__leftColumn,
   &__rightColumn {
-    height: 100%;
     padding: 2rem;
     @include clearfix;
     overflow: hidden;
@@ -18,6 +16,9 @@
     }
   }
   &__leftColumn {
+    @media screen and (max-width: $medium-screen) {
+      height: 600px;
+    }
     background-color: map-get($accent-colors, light);
   }
 

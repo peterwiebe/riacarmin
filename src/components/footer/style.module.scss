@@ -1,2 +1,45 @@
 @import "../../styles/utilities/helpers";
 @import "../../styles/base/variables";
+
+.footer {
+  background-color: $fringy;
+  color: hsl(0, 0%, 100%);
+  @media screen and (min-width: $medium-screen) {
+    height: 4rem;
+  }
+  a {
+    color: white;
+    text-decoration: underline;
+    font-weight: $font-weight-bold;
+  }
+  
+  &__inner {
+    height: 100%;
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 2rem;
+    @media screen and (min-width: $medium-screen) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0;
+    }
+  }
+  &__right {
+    text-align: center;
+    @media screen and (min-width: $medium-screen) {
+      text-align: right;
+    }
+  }
+  &__icon {
+    display: inline-block;
+    font-size: 2rem;
+    margin: 1.25rem .75rem 0 .75rem;
+    line-height: 0;
+    @media screen and (min-width: $medium-screen) {
+      text-align: right;
+      font-size: 1.5rem;
+      margin: 0 0 0 .75rem;
+    }
+  }
+}

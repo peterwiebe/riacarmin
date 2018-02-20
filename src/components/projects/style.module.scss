@@ -19,19 +19,24 @@
   }
   &__grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(14rem, auto));
       grid-gap: 2rem;
-      grid-auto-rows: 22rem;
+      grid-template-columns: repeat(auto-fill, minmax(16rem, auto));
+      @media screen and (min-width: $container-width) {
+        grid-auto-rows: 22rem;
+      }
   }
   &__card {
     @include clearfix;
     background-color: #fff;
     position: relative;
     margin-bottom: 2rem;
-    padding: 2rem;
     border: 1px solid $fringy;
+    @media screen and (min-width: $container-width) {
+      padding: 2rem;
+    }
 
-    &__icon {
+    &__icon__github,
+    &__icon__medium {
       height: 2.25rem;
       width: 2.25rem !important;
       padding: .5rem;
@@ -41,31 +46,44 @@
       color: white;
       display: inline-block;
       border-radius: 50%;
-      background-color: $blue;
     }
+    &__icon__github {
+      background-color: black;
+    }
+
+    &__icon__medium {
+      background-color:#66CDAA
+    }
+
     &__image {
-      position: absolute;
       width: 100%;
-      bottom: -1rem;
-      left: -1rem;
-      z-index: 0;
+      @media screen and (min-width: $container-width) {
+        position: absolute;
+        width: 100%;
+        bottom: -1rem;
+        left: -1rem;
+        z-index: 0;
+        border: 1px solid $fringy;
+      }
     }
     &__title {
-      color: $blue;
+      color: $red;
       font-family: $heading-font-family;
       text-transform: uppercase;
-    }
-  }
-  &__code {
-    &__tag {
-    }
-  }
-  &__design {
-    &__tag {
+      font-weight: $font-weight-bold;
+      font-size: 1rem;
+      @media screen and (max-width: $container-width) {
+        margin: 1rem;
+        margin-top: 2rem;
+      }
     }
 
+    p {
+      @media screen and (max-width: $container-width) {
+        margin: 1rem;
+      }
+    }
   }
-
 }
 
 .square {
@@ -76,8 +94,6 @@
   stroke-linejoin: round;
   stroke-miterlimit: 1.41421;
   position: absolute;
-  // animation: bounce 4s alternate infinite, spin 14s infinite;
-
 
   &__path__1 {
     fill: lighten($color, 10%);
@@ -93,20 +109,4 @@
   }
 }
 
-@keyframes bounce {
-  from {
-    bottom: -1rem;
-  }
-  to {
-    bottom: 2rem;
-  }
-}
 
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

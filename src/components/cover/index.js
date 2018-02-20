@@ -16,14 +16,15 @@ class Cover extends React.Component {
     animate.cover();
   }
   render() {
+    // const height = window.innerWidth > 600 ? `${window.innerHeight}px` : `auto`;
+    const height = `${window.innerHeight}px`;
     return (
       <section
         className={style.cover}
-        style={{
-          height: `${window.innerHeight}px`
-        }}>
+      >
         <div
           className={style.cover__leftColumn}
+          style={{ height }}
           ref={el => {
             this.coverSection = el;
           }}
@@ -51,7 +52,7 @@ class Cover extends React.Component {
           </div>
         </div>
 
-        <div className={style.cover__rightColumn}>
+        <div className={style.cover__rightColumn} style={{ height }}>
           <About
             about={this.props.data.about}
             navigation={this.props.data.navigation}

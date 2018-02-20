@@ -1,21 +1,18 @@
 import React from "react";
 import style from "./style.module.scss";
 const Square = ({ position, rotation }) => {
-  const r = Math.random() * 360;
-  window.addEventListener(scroll, () => console.log(window.scrollY))
-
+  const a = Math.ceil(Math.random() * 10);
 
   return (
-    <svg className={style.square}
+    <svg className={`${style.square} square__animation__${a}`}
       width="80px"
       height="80px"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
       style={{
         left: `${Math.random() * 100}%`,
-        bottom: `2rem`,
         willChange: `transform`,
-        transform: `rotate(${r}deg)`
+        //transform: `rotate(${r}deg)`
       }}
     >
       <defs>
