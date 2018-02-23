@@ -10,6 +10,12 @@
     margin-left: -1px;
     &:first-of-type {
     }
+    @media screen and (max-width: $medium-screen) {
+      display: inline-block;
+      width: 50%;
+      margin-bottom: .5rem;
+      text-align: center;
+    }
     a {
       font-family: $heading-font-family;
       font-size: $base-font-size;
