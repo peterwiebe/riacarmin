@@ -7,7 +7,9 @@ import Square from "./square";
 
 const Card = ({ project }) => (
   <a className={style.projects__card} target="_blank" href={project.node.url}>
-    <article>
+    <article style={{
+      lineHeight: project.node.description ? 1.5 : 0
+    }}>
       {project.node.icon === 'github'
         ? (<FontAwesomeIcon icon={faGithub} className={style.projects__card__icon__github} />)
         : (<FontAwesomeIcon icon={faMediumM} className={style.projects__card__icon__medium} />)
