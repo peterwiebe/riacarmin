@@ -9,9 +9,11 @@
 @keyframes bounce-#{$i} {
   from {
     bottom: $i + 1rem;
+    transform: translateX(0);
   }
   to {
     bottom: $i + 5rem;
+    transform: translateX(10%*$i);
   }
 }
 @keyframes spin-#{$i} {

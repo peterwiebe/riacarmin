@@ -52,7 +52,7 @@ export const indexPageQuery = graphql`
             description
           }
           cover {
-            resize(width: 260, height:260, resizingBehavior: SCALE) {
+            resize(width: 600, height:600, resizingBehavior: SCALE) {
               src
             }
           }

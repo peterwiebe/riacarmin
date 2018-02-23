@@ -27,12 +27,18 @@ export default class Animation {
   }
 
   initCanvas() {
-    this.canvas.width = this.parent.offsetWidth < 599 ? this.parent.offsetWidth : this.parent.offsetWidth / 2;
-    this.canvas.height = window.innerHeight;
+    const r = window.devicePixelRatio ? window.devicePixelRatio : 1;
+    const w = this.parent.offsetWidth < 599 ? this.parent.offsetWidth : this.parent.offsetWidth / 2;
+    const h = window.innerHeight;
+    this.canvas.width = w * r;
+    this.canvas.height = h * r;
+    this.canvas.style.width = `${w}px`;
+    this.canvas.style.height = `${h}px`;
     this.center = {
-      x: this.canvas.width / 2,
-      y: this.canvas.height / 2 - 40
+      x: w / 2,
+      y: h / 2 - (40 / r)
     }
+    this.ctx.scale(r, r);
   }
 
   generateCircles() {
