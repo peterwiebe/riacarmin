@@ -1,19 +1,21 @@
 import React from "react";
 import style from "./style.module.scss";
 
-import Animation from "./animation";
-
 import Name from "../name";
 import About from "../about";
-import index from "../about";
+import Animation from "./animation";
 
 class Cover extends React.Component {
   constructor(props) {
     super(props);
+
   }
   componentDidMount() {
-    const animate = new Animation(this.coverSection, this.coverCanvas);
-    animate.cover();
+
+  }
+
+  componentWillUnmount() {
+
   }
   render() {
     let height;
@@ -32,16 +34,8 @@ class Cover extends React.Component {
           }}
         >
           <Name />
+          <Animation width={window.innerWidth / 2} height={window.innerHeight} />
 
-          <canvas ref={el => {
-            this.coverCanvas = el;
-          }}
-            style={{
-              position: 'absolute',
-              top: 0,
-              left: 0
-            }}
-          ></canvas>
           <div
             className={`${style.cover__skewed} ${style.cover__skewed__left__1}`}
           >
@@ -74,7 +68,7 @@ class Cover extends React.Component {
             &nbsp;
           </div>
         </div>
-      </section>
+      </section >
     );
   }
 }
