@@ -26,10 +26,6 @@ module.exports = {
         display: "minimal-ui",
         icons: [
           {
-            // Everything in /static will be copied to an equivalent
-            // directory in /public during development and build, so
-            // assuming your favicons are in /static/favicons,
-            // you can reference them here
             src: `/favicons/android-chrome-192x192.png`,
             sizes: `192x192`,
             type: `image/png`
@@ -45,10 +41,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-nprogress`,
       options: {
-        // Setting a color is optional.
-        color: `tomato`,
-        // Disable the loading spinner.
-        showSpinner: false
+        color: `#2e3c99`,
+        showSpinner: true
       }
     },
     {
