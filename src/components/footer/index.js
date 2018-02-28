@@ -13,7 +13,7 @@ const Footer = () => {
           Ria Carmin &copy;{y}
         </div>
         <div className={style.footer__center}>
-          Built with <a href="https://www.gatsbyjs.org/">Gatsby</a> and <a href="https://www.contentful.com/">Contentful</a>.
+          Build with <a href="https://www.gatsbyjs.org/">Gatsby</a> and <a href="https://www.contentful.com/">Contentful</a>.
       </div>
         <div className={style.footer__right}>
           <ul>
