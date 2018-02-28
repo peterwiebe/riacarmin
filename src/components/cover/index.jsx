@@ -1,47 +1,42 @@
-import React from "react";
-import style from "./style.module.scss";
+import React from "react"
+import style from "./style.module.scss"
 
-import Animation from "./animation";
+import Animation from "./animation"
 
-import Name from "../name";
-import About from "../about";
-import index from "../about";
+import Name from "../name"
+import About from "../about"
 
 class Cover extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   componentDidMount() {
-    const animate = new Animation(this.coverSection, this.coverCanvas);
-    animate.cover();
+    const animate = new Animation(this.coverSection, this.coverCanvas)
+    animate.cover()
   }
   render() {
-    let height;
+    let height
     if (typeof window !== `undefined`) {
-      height = `${window.innerHeight}px`;
+      height = `${window.innerHeight}px`
     }
     return (
-      <section
-        className={style.cover}
-      >
+      <section className={style.cover}>
         <div
           className={style.cover__leftColumn}
           style={{ height }}
           ref={el => {
-            this.coverSection = el;
+            this.coverSection = el
           }}
         >
           <Name />
 
-          <canvas ref={el => {
-            this.coverCanvas = el;
-          }}
+          <canvas
+            ref={el => {
+              this.coverCanvas = el
+            }}
             style={{
-              position: 'absolute',
+              position: `absolute`,
               top: 0,
               left: 0
             }}
-          ></canvas>
+          />
           <div
             className={`${style.cover__skewed} ${style.cover__skewed__left__1}`}
           >
@@ -62,21 +57,21 @@ class Cover extends React.Component {
           <div
             className={`${style.cover__skewed} ${
               style.cover__skewed__right__1
-              }`}
+            }`}
           >
             &nbsp;
           </div>
           <div
             className={`${style.cover__skewed} ${
               style.cover__skewed__right__2
-              }`}
+            }`}
           >
             &nbsp;
           </div>
         </div>
       </section>
-    );
+    )
   }
 }
 
-export default Cover;
+export default Cover

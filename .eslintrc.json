@@ -19,29 +19,15 @@
     },
     "sourceType": "module"
   },
-  "plugins": [
-    "react",
-    "jsx-a11y"
-  ],
+  "plugins": ["react", "jsx-a11y"],
   "rules": {
-    "indent": [
-      "error",
-      2
-    ],
-    "linebreak-style": [
-      "error",
-      "unix"
-    ],
-    "quotes": [
-      "error",
-      "single"
-    ],
-    "semi": [
-      "error",
-      "always"
-    ],
+    "indent": ["error", 2],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "backtick"],
+    "semi": ["error", "never"],
     "react/jsx-uses-vars": "error",
-    "react/jsx-boolean-value": "error"
+    "react/jsx-boolean-value": "error",
+    "import/no-extraneous-dependencies": "warn"
   },
   "settings": {
     "react": {
@@ -49,8 +35,12 @@
       "pragma": "React",
       "version": "15.0"
     },
-    "propWrapperFunctions": [
-      "forbidExtraProps"
-    ]
+    "propWrapperFunctions": ["forbidExtraProps"]
+  },
+  "globals": {
+    "graphql": true,
+    "window": true,
+    "document": true,
+    "requestAnimationFrame": true
   }
 }

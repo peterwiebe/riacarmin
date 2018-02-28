@@ -1,7 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: `Ria Carmin | Interface Engineer`,
-    siteUrl: `http://www.riacarmin.com`
+    siteUrl: `http://riacarmin.com`,
+    description: `UX Engineer and JavaScript Developer in Vancouver, Canada. I strive to create amazing and memorable experiences for people on the web. I specialize in creating scalable design systems and modular approach. I also love learning and experimenting with all things JavaScript.`,
+    keywords: `React, Angular, Preact, GraphQL, developer, designer`,
+    cover: `https://images.contentful.com/mjjc4cn5846z/6p5shTWKVaoAoiy2yO04i2/cdc47fe47c42bdaa234a40b6a74cda5a/og_cover.png`,
+    twitter: `@riacarmin`,
+    fb: `208088706603346`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -9,7 +14,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-tagmanager`,
       options: {
-        id: "GTM-M9FQPFL",
+        id: `GTM-M9FQPFL`,
         // Include GTM in development.
         // Defaults to false meaning GTM will only be loaded in production.
         includeInDevelopment: false
@@ -18,12 +23,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "Ria Carmin | Interface Engineer",
-        short_name: "Ria Carmin",
-        start_url: "/",
-        background_color: "#ffd2d5",
-        theme_color: "#2e3c99",
-        display: "minimal-ui",
+        name: `Ria Carmin | Interface Engineer`,
+        short_name: `Ria Carmin`,
+        start_url: `/`,
+        background_color: `#ffd2d5`,
+        theme_color: `#2e3c99`,
+        display: `minimal-ui`,
         icons: [
           {
             src: `/favicons/android-chrome-192x192.png`,
@@ -57,4 +62,4 @@ module.exports = {
     },
     `gatsby-transformer-remark`
   ]
-};
+}

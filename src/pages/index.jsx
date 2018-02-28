@@ -1,24 +1,27 @@
-import React from "react";
-import Link from "gatsby-link";
+import React from "react"
+import PropTypes from "prop-types"
 
-import Cover from "../components/cover";
-import Projects from '../components/projects';
+import Cover from "../components/cover"
+import Projects from "../components/projects"
 
 const IndexPage = ({ data }) => (
   <main className="view">
     <Cover
       data={{
-        about: data.allContentfulAbout.edges[0].node.body.childMarkdownRemark.html,
+        about:
+          data.allContentfulAbout.edges[0].node.body.childMarkdownRemark.html,
         navigation: data.allContentfulLinks.edges
       }}
     />
-    <Projects data={{
-      projects: data.allContentfulProject.edges
-    }} />
+    <Projects
+      data={{
+        projects: data.allContentfulProject.edges
+      }}
+    />
   </main>
-);
+)
 
-export default IndexPage;
+export default IndexPage
 
 export const indexPageQuery = graphql`
   query indexPageQuery {
@@ -52,7 +55,7 @@ export const indexPageQuery = graphql`
             description
           }
           cover {
-            resize(width: 600, height:600, resizingBehavior: SCALE) {
+            resize(width: 600, height: 600, resizingBehavior: SCALE) {
               src
             }
           }
@@ -61,4 +64,4 @@ export const indexPageQuery = graphql`
       }
     }
   }
-`;
+`
