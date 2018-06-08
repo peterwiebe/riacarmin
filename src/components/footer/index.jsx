@@ -16,7 +16,7 @@ const Footer = () => {
       <div className={style.footer__inner}>
         <div className={style.footer__left}>Ria Carmin &copy;{y}</div>
         <div className={style.footer__center}>
-          Build with <a href="https://www.gatsbyjs.org/">Gatsby</a> and{` `}
+          Built with <a href="https://www.gatsbyjs.org/">Gatsby</a> and{` `}
           <a href="https://www.contentful.com/">Contentful</a>.
         </div>
         <div className={style.footer__right}>
