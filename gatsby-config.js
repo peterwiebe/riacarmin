@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Ria Carmin | Interface Engineer`,
-    siteUrl: `http://riacarmin.com`,
+    siteUrl: `https://riacarmin.com`,
     description: `UX Engineer and JavaScript Developer in Vancouver, Canada. I strive to create amazing and memorable experiences for people on the web. I specialize in creating scalable design systems and modular approach. I also love learning and experimenting with all things JavaScript.`,
     keywords: `React, Angular, Preact, GraphQL, developer, designer`,
     cover: `https://images.contentful.com/mjjc4cn5846z/6p5shTWKVaoAoiy2yO04i2/cdc47fe47c42bdaa234a40b6a74cda5a/og_cover.png`,
